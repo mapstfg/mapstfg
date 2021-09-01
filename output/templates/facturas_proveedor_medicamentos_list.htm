@@ -1,0 +1,2422 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo1" {$item_logo1}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo1" {$item_logo1} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Expand" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main}			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}" >
+
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Búsqueda			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Mostrar opciones</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>todas las condiciones</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>cualquier condición</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>esconder</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_id_factura_proveedor}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id_factura_proveedor}" {$filterRow_attrs_id_factura_proveedor}>
+			<label>{$label facturas_proveedor_medicamentos id_factura_proveedor }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id_factura_proveedor}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id_factura_proveedor}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id_factura_proveedor}</span>
+						</div>
+		{END searchCtrlBlock_id_factura_proveedor}
+																{BEGIN searchCtrlBlock_id_factura_proveedor_medicamentos}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id_factura_proveedor_medicamentos}" {$filterRow_attrs_id_factura_proveedor_medicamentos}>
+			<label>{$label facturas_proveedor_medicamentos id_factura_proveedor_medicamentos }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id_factura_proveedor_medicamentos}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id_factura_proveedor_medicamentos}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id_factura_proveedor_medicamentos}</span>
+						</div>
+		{END searchCtrlBlock_id_factura_proveedor_medicamentos}
+																{BEGIN searchCtrlBlock_id_u_almacenista}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id_u_almacenista}" {$filterRow_attrs_id_u_almacenista}>
+			<label>{$label facturas_proveedor_medicamentos id_u_almacenista }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id_u_almacenista}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id_u_almacenista}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id_u_almacenista}</span>
+						</div>
+		{END searchCtrlBlock_id_u_almacenista}
+																{BEGIN searchCtrlBlock_observaciones}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_observaciones}" {$filterRow_attrs_observaciones}>
+			<label>{$label facturas_proveedor_medicamentos observaciones }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_observaciones}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_observaciones}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_observaciones}</span>
+						</div>
+		{END searchCtrlBlock_observaciones}
+																{BEGIN searchCtrlBlock_reingreso}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_reingreso}" {$filterRow_attrs_reingreso}>
+			<label>{$label facturas_proveedor_medicamentos reingreso }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_reingreso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_reingreso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_reingreso}</span>
+						</div>
+		{END searchCtrlBlock_reingreso}
+																{BEGIN searchCtrlBlock_donaci_n}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_donaci_n}" {$filterRow_attrs_donaci_n}>
+			<label>{$label facturas_proveedor_medicamentos donaci_n }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_donaci_n}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_donaci_n}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_donaci_n}</span>
+						</div>
+		{END searchCtrlBlock_donaci_n}
+																{BEGIN searchCtrlBlock_no_almacenado}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_no_almacenado}" {$filterRow_attrs_no_almacenado}>
+			<label>{$label facturas_proveedor_medicamentos no_almacenado }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_no_almacenado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_no_almacenado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_no_almacenado}</span>
+						</div>
+		{END searchCtrlBlock_no_almacenado}
+																{BEGIN searchCtrlBlock_almacenado}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_almacenado}" {$filterRow_attrs_almacenado}>
+			<label>{$label facturas_proveedor_medicamentos almacenado }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_almacenado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_almacenado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_almacenado}</span>
+						</div>
+		{END searchCtrlBlock_almacenado}
+																{BEGIN searchCtrlBlock_precio_total}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_precio_total}" {$filterRow_attrs_precio_total}>
+			<label>{$label facturas_proveedor_medicamentos precio_total }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_precio_total}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_precio_total}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_precio_total}</span>
+						</div>
+		{END searchCtrlBlock_precio_total}
+																{BEGIN searchCtrlBlock_descuento}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_descuento}" {$filterRow_attrs_descuento}>
+			<label>{$label facturas_proveedor_medicamentos descuento }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_descuento}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_descuento}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_descuento}</span>
+						</div>
+		{END searchCtrlBlock_descuento}
+																{BEGIN searchCtrlBlock_precio_unitario}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_precio_unitario}" {$filterRow_attrs_precio_unitario}>
+			<label>{$label facturas_proveedor_medicamentos precio_unitario }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_precio_unitario}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_precio_unitario}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_precio_unitario}</span>
+						</div>
+		{END searchCtrlBlock_precio_unitario}
+																{BEGIN searchCtrlBlock_cantidad}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cantidad}" {$filterRow_attrs_cantidad}>
+			<label>{$label facturas_proveedor_medicamentos cantidad }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cantidad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cantidad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cantidad}</span>
+						</div>
+		{END searchCtrlBlock_cantidad}
+																{BEGIN searchCtrlBlock_fecha_caducidad}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_fecha_caducidad}" {$filterRow_attrs_fecha_caducidad}>
+			<label>{$label facturas_proveedor_medicamentos fecha_caducidad }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_fecha_caducidad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_fecha_caducidad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_fecha_caducidad}</span>
+						</div>
+		{END searchCtrlBlock_fecha_caducidad}
+																{BEGIN searchCtrlBlock_fecha_fabricaci_n}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_fecha_fabricaci_n}" {$filterRow_attrs_fecha_fabricaci_n}>
+			<label>{$label facturas_proveedor_medicamentos fecha_fabricaci_n }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_fecha_fabricaci_n}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_fecha_fabricaci_n}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_fecha_fabricaci_n}</span>
+						</div>
+		{END searchCtrlBlock_fecha_fabricaci_n}
+																{BEGIN searchCtrlBlock_c_digo_cnmb}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_c_digo_cnmb}" {$filterRow_attrs_c_digo_cnmb}>
+			<label>{$label facturas_proveedor_medicamentos c_digo_cnmb }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_c_digo_cnmb}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_c_digo_cnmb}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_c_digo_cnmb}</span>
+						</div>
+		{END searchCtrlBlock_c_digo_cnmb}
+																{BEGIN searchCtrlBlock_id_producto}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id_producto}" {$filterRow_attrs_id_producto}>
+			<label>{$label facturas_proveedor_medicamentos id_producto }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id_producto}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id_producto}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id_producto}</span>
+						</div>
+		{END searchCtrlBlock_id_producto}
+																{BEGIN searchCtrlBlock_concentraci_n}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_concentraci_n}" {$filterRow_attrs_concentraci_n}>
+			<label>{$label facturas_proveedor_medicamentos concentraci_n }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_concentraci_n}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_concentraci_n}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_concentraci_n}</span>
+						</div>
+		{END searchCtrlBlock_concentraci_n}
+																{BEGIN searchCtrlBlock_forma_farmaceutica}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_forma_farmaceutica}" {$filterRow_attrs_forma_farmaceutica}>
+			<label>{$label facturas_proveedor_medicamentos forma_farmaceutica }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_forma_farmaceutica}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_forma_farmaceutica}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_forma_farmaceutica}</span>
+						</div>
+		{END searchCtrlBlock_forma_farmaceutica}
+																{BEGIN searchCtrlBlock_descripci_n}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_descripci_n}" {$filterRow_attrs_descripci_n}>
+			<label>{$label facturas_proveedor_medicamentos descripci_n }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_descripci_n}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_descripci_n}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_descripci_n}</span>
+						</div>
+		{END searchCtrlBlock_descripci_n}
+																{BEGIN searchCtrlBlock_c_digo_barras}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_c_digo_barras}" {$filterRow_attrs_c_digo_barras}>
+			<label>{$label facturas_proveedor_medicamentos c_digo_barras }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_c_digo_barras}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_c_digo_barras}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_c_digo_barras}</span>
+						</div>
+		{END searchCtrlBlock_c_digo_barras}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Buscar</button>
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>Mostrar todo</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
+    {END left_block}
+</div>				</div>	
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div  class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Collapse" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="breadcrumb" {$item_breadcrumb} data-topcell-item-type="breadcrumb" >
+				{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Mostrar todo">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-cog"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN exportselected_link}
+	<li data-itemtype="export_selected" data-itemid="export_selected" {$item_export_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}  title="" >
+				
+		Exportar seleccionados		
+		</a>
+	</li>
+{END exportselected_link}
+							{BEGIN deleteselected_link}
+	<li data-itemtype="delete_selected" data-itemid="delete_selected" {$item_delete_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}  title="" >
+				
+		Borrar articulos seleccionados		
+		</a>
+	</li>
+{END deleteselected_link}
+							<li role="separator" class="divider"></li>								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="facturas_proveedor_medicamentos_search.php{$stateLink_full}" {$advsearchlink_attrs}  title="" >
+				
+		Búsqueda avanzada		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Mostrar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Ocultar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							<li role="separator" class="divider"></li>							{BEGIN export_link}
+	<li data-itemtype="export" data-itemid="export" {$item_export} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportlink_attrs}  title="" >
+				
+		Exportar resultados		
+		</a>
+	</li>
+{END export_link}
+							<li role="separator" class="divider"></li>							{BEGIN import_link}
+	<li data-itemtype="import" data-itemid="import" {$item_import} data-pageid="{$pageid}" data-small >
+				<a  {$importlink_attrs} href="facturas_proveedor_medicamentos_import.php{$stateLink_full}"  title="" >
+				
+		Importar		
+		</a>
+	</li>
+{END import_link}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Conectar			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-user"></span>
+						{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Desconectarse		
+		</a>
+	</li>
+{END logoutbutton}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>	
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN mastertable_block}
+<div data-itemtype="master_info" data-itemid="master_info" {$item_master_info} data-pageid="{$pageid}">
+	{$showmasterfile}
+</div>
+{END mastertable_block}		</div>					</div>
+	</div>		
+{END top_block}
+						</div>
+					<div class="r-above">
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class="			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN add_link}
+<span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$addlink_attrs} href="facturas_proveedor_medicamentos_add.php{$stateLink_full}" >
+							Añadir nuevo			</a>
+</span>
+{END add_link}
+	 
+		{BEGIN inlineadd_link}
+<span data-itemtype="inline_add" data-itemid="inline_add" {$item_inline_add} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$inlineaddlink_attrs} >
+							Añadir nuevo			</a>
+</span>
+{END inlineadd_link}
+	 
+		{BEGIN deleteselected_link}
+<span data-itemtype="delete" data-itemid="delete" {$item_delete} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled >
+							Borrar artículos seleccionados			</a>
+</span>
+{END deleteselected_link}
+			{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$details_found_labeldetails_found}
+</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>	 
+		{BEGIN print_friendly}
+<span id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+	<button title="Página para imprimir" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				 
+					<li class="container-fluid 
+										">
+									<div id="print_friendly_scope{$id}">
+	<div class="row">
+		<div class="col-md-4">
+			Rango:		</div>
+
+		{BEGIN print_friendly_all}
+		<div class="col-md-8">
+			<label for="printAll{$id}">
+				<input type="radio" id="printAll{$id}" data-href="facturas_proveedor_medicamentos_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">
+									Imprimir todas las páginas							</label>
+		</div>
+		{END print_friendly_all}
+	</div>
+	<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-8">
+			<label for="printPage{$id}">
+				<input name="printScope" id="printPage{$id}" type="radio" checked data-href="facturas_proveedor_medicamentos_print.php?{$crosstable_attrs}">
+				Imprimir esta página			</label>
+		</div>
+	</div>
+	
+		<div class="row">
+		<div class="col-md-4">
+			&nbsp;
+		</div>
+		<div class="col-md-8">
+			<label style="color: gray;" for="printSelection{$id}">
+			<input name="printScope" disabled="disabled" id="printSelection{$id}" type="radio">
+			Imprimir la selección			</label>
+		</div>
+	</div>
+	</div>				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									{BEGIN print_details}
+<div>
+	<label for="printDetailsToggler{$id}">
+		<input type="checkbox" id="printDetailsToggler{$id}">
+		Detalles de impresión	</label>
+	<div  id="printdetailstables{$id}" style="display:none;">
+											{BEGIN print_details_stock_medicamentos}
+			<div>
+				<label for="printDetailsstock_medicamentos{$id}">
+					<input type="checkbox" value="stock_medicamentos" id="printDetailsstock_medicamentos{$id}" checked>
+					Stock Medicamentos				</label>
+			</div>
+			{END print_details_stock_medicamentos}
+						</div>
+</div>
+{END print_details}
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									<div>
+	<label for="printPerPage{$id}">
+					Resultados por página							
+	</label>
+	<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+					 text-center 					">
+									<span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" id="print_friendly_button{$id}" >
+							Imprimir			</a>
+</span>
+				 
+					</li>
+															</ul>
+</span>
+{END print_friendly}
+		</div>					</div>
+	</div>		
+{END above-grid_block}
+						</div>
+					<div class="r-grid">
+										{BEGIN grid_block}
+{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}	<style>
+@media screen and (max-width: 767px) {
+		[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="id_factura_proveedor_medicamentos"]:before {
+		content: "{$label facturas_proveedor_medicamentos id_factura_proveedor_medicamentos}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="id_factura_proveedor"]:before {
+		content: "{$label facturas_proveedor_medicamentos id_factura_proveedor}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="c_digo_barras"]:before {
+		content: "{$label facturas_proveedor_medicamentos c_digo_barras}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="c_digo_cnmb"]:before {
+		content: "{$label facturas_proveedor_medicamentos c_digo_cnmb}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="descripci_n"]:before {
+		content: "{$label facturas_proveedor_medicamentos descripci_n}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="forma_farmaceutica"]:before {
+		content: "{$label facturas_proveedor_medicamentos forma_farmaceutica}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="concentraci_n"]:before {
+		content: "{$label facturas_proveedor_medicamentos concentraci_n}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="id_producto"]:before {
+		content: "{$label facturas_proveedor_medicamentos id_producto}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="fecha_fabricaci_n"]:before {
+		content: "{$label facturas_proveedor_medicamentos fecha_fabricaci_n}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="fecha_caducidad"]:before {
+		content: "{$label facturas_proveedor_medicamentos fecha_caducidad}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cantidad"]:before {
+		content: "{$label facturas_proveedor_medicamentos cantidad}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="precio_unitario"]:before {
+		content: "{$label facturas_proveedor_medicamentos precio_unitario}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="descuento"]:before {
+		content: "{$label facturas_proveedor_medicamentos descuento}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="precio_total"]:before {
+		content: "{$label facturas_proveedor_medicamentos precio_total}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="almacenado"]:before {
+		content: "{$label facturas_proveedor_medicamentos almacenado}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="no_almacenado"]:before {
+		content: "{$label facturas_proveedor_medicamentos no_almacenado}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="donaci_n"]:before {
+		content: "{$label facturas_proveedor_medicamentos donaci_n}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="reingreso"]:before {
+		content: "{$label facturas_proveedor_medicamentos reingreso}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="observaciones"]:before {
+		content: "{$label facturas_proveedor_medicamentos observaciones}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="id_u_almacenista"]:before {
+		content: "{$label facturas_proveedor_medicamentos id_u_almacenista}";
+	}
+	}
+</style>
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  r-flexgrid rnr-b-grid rnr-gridtable" 
+	cellpadding="0" 
+	data-body-height="2"
+>
+						<thead>
+			{BEGIN grid_header}
+					
+		 
+						<tr {$rowattrs} {$row_grid_0} class="{$rowclass} 
+									{$gridHeader_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_headcell_icons}
+	<th
+	
+	{$cell_grid_headcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"		data-control-cell
+	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_icons}
+				 
+					{BEGIN cellblock_grid_headcell_checkbox}
+	<th
+	
+	{$cell_grid_headcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox_head" data-itemid="grid_checkbox_head" {$item_grid_checkbox_head} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkboxheader_attrs}>
+</span>
+{END checkbox_column}
+	
+	</th>
+	{END cellblock_grid_headcell_checkbox}
+				 
+					{BEGIN cellblock_grid_headcell_details}
+	<th
+	
+	{$cell_grid_headcell_details}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_details" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_details}
+				 
+					{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_factura_proveedor_class}
+			"
+
+			data-field="id_factura_proveedor"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_factura_proveedor_fieldheadercolumn}
+	{BEGIN id_factura_proveedor_fieldheader}
+	<SPAN {$id_factura_proveedor_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_factura_proveedor">
+	{$label facturas_proveedor_medicamentos id_factura_proveedor }	{$arrow_icon_id_factura_proveedor}
+	</SPAN>
+	{END id_factura_proveedor_fieldheader}
+{END id_factura_proveedor_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+				 
+					{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$c_digo_barras_class}
+			"
+
+			data-field="c_digo_barras"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN c_digo_barras_fieldheadercolumn}
+	{BEGIN c_digo_barras_fieldheader}
+	<SPAN {$c_digo_barras_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="c_digo_barras">
+	{$label facturas_proveedor_medicamentos c_digo_barras }	{$arrow_icon_c_digo_barras}
+	</SPAN>
+	{END c_digo_barras_fieldheader}
+{END c_digo_barras_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$descripci_n_class}
+			"
+
+			data-field="descripci_n"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN descripci_n_fieldheadercolumn}
+	{BEGIN descripci_n_fieldheader}
+	<SPAN {$descripci_n_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="descripci_n">
+	{$label facturas_proveedor_medicamentos descripci_n }	{$arrow_icon_descripci_n}
+	</SPAN>
+	{END descripci_n_fieldheader}
+{END descripci_n_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+				 
+					{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$forma_farmaceutica_class}
+			"
+
+			data-field="forma_farmaceutica"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN forma_farmaceutica_fieldheadercolumn}
+	{BEGIN forma_farmaceutica_fieldheader}
+	<SPAN {$forma_farmaceutica_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="forma_farmaceutica">
+	{$label facturas_proveedor_medicamentos forma_farmaceutica }	{$arrow_icon_forma_farmaceutica}
+	</SPAN>
+	{END forma_farmaceutica_fieldheader}
+{END forma_farmaceutica_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+				 
+					{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$concentraci_n_class}
+			"
+
+			data-field="concentraci_n"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN concentraci_n_fieldheadercolumn}
+	{BEGIN concentraci_n_fieldheader}
+	<SPAN {$concentraci_n_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="concentraci_n">
+	{$label facturas_proveedor_medicamentos concentraci_n }	{$arrow_icon_concentraci_n}
+	</SPAN>
+	{END concentraci_n_fieldheader}
+{END concentraci_n_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+				 
+					{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_producto_class}
+			"
+
+			data-field="id_producto"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_producto_fieldheadercolumn}
+	{BEGIN id_producto_fieldheader}
+	<SPAN {$id_producto_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_producto">
+	{$label facturas_proveedor_medicamentos id_producto }	{$arrow_icon_id_producto}
+	</SPAN>
+	{END id_producto_fieldheader}
+{END id_producto_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+				 
+					{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$c_digo_cnmb_class}
+			"
+
+			data-field="c_digo_cnmb"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN c_digo_cnmb_fieldheadercolumn}
+	{BEGIN c_digo_cnmb_fieldheader}
+	<SPAN {$c_digo_cnmb_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="c_digo_cnmb">
+	{$label facturas_proveedor_medicamentos c_digo_cnmb }	{$arrow_icon_c_digo_cnmb}
+	</SPAN>
+	{END c_digo_cnmb_fieldheader}
+{END c_digo_cnmb_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+				 
+					{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$fecha_fabricaci_n_class}
+			"
+
+			data-field="fecha_fabricaci_n"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN fecha_fabricaci_n_fieldheadercolumn}
+	{BEGIN fecha_fabricaci_n_fieldheader}
+	<SPAN {$fecha_fabricaci_n_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fecha_fabricaci_n">
+	{$label facturas_proveedor_medicamentos fecha_fabricaci_n }	{$arrow_icon_fecha_fabricaci_n}
+	</SPAN>
+	{END fecha_fabricaci_n_fieldheader}
+{END fecha_fabricaci_n_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+				 
+					{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$fecha_caducidad_class}
+			"
+
+			data-field="fecha_caducidad"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN fecha_caducidad_fieldheadercolumn}
+	{BEGIN fecha_caducidad_fieldheader}
+	<SPAN {$fecha_caducidad_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fecha_caducidad">
+	{$label facturas_proveedor_medicamentos fecha_caducidad }	{$arrow_icon_fecha_caducidad}
+	</SPAN>
+	{END fecha_caducidad_fieldheader}
+{END fecha_caducidad_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+				 
+					{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cantidad_class}
+			"
+
+			data-field="cantidad"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cantidad_fieldheadercolumn}
+	{BEGIN cantidad_fieldheader}
+	<SPAN {$cantidad_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cantidad">
+	{$label facturas_proveedor_medicamentos cantidad }	{$arrow_icon_cantidad}
+	</SPAN>
+	{END cantidad_fieldheader}
+{END cantidad_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
+				 
+					{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$precio_unitario_class}
+			"
+
+			data-field="precio_unitario"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN precio_unitario_fieldheadercolumn}
+	{BEGIN precio_unitario_fieldheader}
+	<SPAN {$precio_unitario_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="precio_unitario">
+	{$label facturas_proveedor_medicamentos precio_unitario }	{$arrow_icon_precio_unitario}
+	</SPAN>
+	{END precio_unitario_fieldheader}
+{END precio_unitario_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+				 
+					{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$descuento_class}
+			"
+
+			data-field="descuento"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN descuento_fieldheadercolumn}
+	{BEGIN descuento_fieldheader}
+	<SPAN {$descuento_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="descuento">
+	{$label facturas_proveedor_medicamentos descuento }	{$arrow_icon_descuento}
+	</SPAN>
+	{END descuento_fieldheader}
+{END descuento_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
+				 
+					{BEGIN cellblock_grid_headcell_field12}
+	<th
+	
+	{$cell_grid_headcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$precio_total_class}
+			"
+
+			data-field="precio_total"
+	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN precio_total_fieldheadercolumn}
+	{BEGIN precio_total_fieldheader}
+	<SPAN {$precio_total_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field32" {$item_simple_grid_field32} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="precio_total">
+	{$label facturas_proveedor_medicamentos precio_total }	{$arrow_icon_precio_total}
+	</SPAN>
+	{END precio_total_fieldheader}
+{END precio_total_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field12}
+				 
+					{BEGIN cellblock_grid_headcell_field13}
+	<th
+	
+	{$cell_grid_headcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$almacenado_class}
+			"
+
+			data-field="almacenado"
+	
+	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN almacenado_fieldheadercolumn}
+	{BEGIN almacenado_fieldheader}
+	<SPAN {$almacenado_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field33" {$item_simple_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="almacenado">
+	{$label facturas_proveedor_medicamentos almacenado }	{$arrow_icon_almacenado}
+	</SPAN>
+	{END almacenado_fieldheader}
+{END almacenado_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field13}
+				 
+					{BEGIN cellblock_grid_headcell_field14}
+	<th
+	
+	{$cell_grid_headcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$no_almacenado_class}
+			"
+
+			data-field="no_almacenado"
+	
+	data-cellId="grid_headcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN no_almacenado_fieldheadercolumn}
+	{BEGIN no_almacenado_fieldheader}
+	<SPAN {$no_almacenado_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field34" {$item_simple_grid_field34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="no_almacenado">
+	{$label facturas_proveedor_medicamentos no_almacenado }	{$arrow_icon_no_almacenado}
+	</SPAN>
+	{END no_almacenado_fieldheader}
+{END no_almacenado_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field14}
+				 
+					{BEGIN cellblock_grid_headcell_field15}
+	<th
+	
+	{$cell_grid_headcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$donaci_n_class}
+			"
+
+			data-field="donaci_n"
+	
+	data-cellId="grid_headcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN donaci_n_fieldheadercolumn}
+	{BEGIN donaci_n_fieldheader}
+	<SPAN {$donaci_n_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field35" {$item_simple_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="donaci_n">
+	{$label facturas_proveedor_medicamentos donaci_n }	{$arrow_icon_donaci_n}
+	</SPAN>
+	{END donaci_n_fieldheader}
+{END donaci_n_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field15}
+				 
+					{BEGIN cellblock_grid_headcell_field16}
+	<th
+	
+	{$cell_grid_headcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$reingreso_class}
+			"
+
+			data-field="reingreso"
+	
+	data-cellId="grid_headcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN reingreso_fieldheadercolumn}
+	{BEGIN reingreso_fieldheader}
+	<SPAN {$reingreso_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field36" {$item_simple_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="reingreso">
+	{$label facturas_proveedor_medicamentos reingreso }	{$arrow_icon_reingreso}
+	</SPAN>
+	{END reingreso_fieldheader}
+{END reingreso_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field16}
+				 
+					{BEGIN cellblock_grid_headcell_field17}
+	<th
+	
+	{$cell_grid_headcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$observaciones_class}
+			"
+
+			data-field="observaciones"
+	
+	data-cellId="grid_headcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN observaciones_fieldheadercolumn}
+	{BEGIN observaciones_fieldheader}
+	<SPAN {$observaciones_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field37" {$item_simple_grid_field37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="observaciones">
+	{$label facturas_proveedor_medicamentos observaciones }	{$arrow_icon_observaciones}
+	</SPAN>
+	{END observaciones_fieldheader}
+{END observaciones_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field17}
+				 
+					{BEGIN cellblock_grid_headcell_field18}
+	<th
+	
+	{$cell_grid_headcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_u_almacenista_class}
+			"
+
+			data-field="id_u_almacenista"
+	
+	data-cellId="grid_headcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_u_almacenista_fieldheadercolumn}
+	{BEGIN id_u_almacenista_fieldheader}
+	<SPAN {$id_u_almacenista_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field38" {$item_simple_grid_field38} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_u_almacenista">
+	{$label facturas_proveedor_medicamentos id_u_almacenista }	{$arrow_icon_id_u_almacenista}
+	</SPAN>
+	{END id_u_almacenista_fieldheader}
+{END id_u_almacenista_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field18}
+				 
+					{BEGIN cellblock_grid_headcell_field19}
+	<th
+	
+	{$cell_grid_headcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_factura_proveedor_medicamentos_class}
+			"
+
+			data-field="id_factura_proveedor_medicamentos"
+	
+	data-cellId="grid_headcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_factura_proveedor_medicamentos_fieldheadercolumn}
+	{BEGIN id_factura_proveedor_medicamentos_fieldheader}
+	<SPAN {$id_factura_proveedor_medicamentos_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field39" {$item_simple_grid_field39} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_factura_proveedor_medicamentos">
+	{$label facturas_proveedor_medicamentos id_factura_proveedor_medicamentos }	{$arrow_icon_id_factura_proveedor_medicamentos}
+	</SPAN>
+	{END id_factura_proveedor_medicamentos_fieldheader}
+{END id_factura_proveedor_medicamentos_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field19}
+							</tr>
+					 
+					 
+					 
+					
+					{END grid_header}
+			</thead>
+															<tbody>
+					{BEGIN grid_row}
+									
+		 
+					 
+						<tr {$rowattrs} {$row_grid_1} class="{$rowclass} 
+								
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_cell_icons}
+	<td
+	
+	{$cell_grid_cell_icons}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN edit_column}
+{BEGIN edit_link}
+<span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Editar" class="btn-link   
+	 glyphicon glyphicon-pencil" href="facturas_proveedor_medicamentos_edit.php?{$editlink}" {$editlink_attrs} title="Editar" >		
+				
+								</a>
+</span>
+{END edit_link}
+{END edit_column}
+	 
+		{BEGIN inline_cancel}
+<span data-itemtype="grid_inline_cancel" data-itemid="grid_inline_cancel" {$item_grid_inline_cancel} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Cancelar" class="btn-link   
+	 glyphicon glyphicon-remove" {$inlinerevertlink_attrs} title="Cancelar" >		
+				
+								</a>
+</span>
+{END inline_cancel}
+	 
+		{BEGIN view_column}
+{BEGIN view_link}
+<span data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Ver registro" class="btn-link   
+	 glyphicon glyphicon-search" href="facturas_proveedor_medicamentos_view.php?{$editlink}" {$viewlink_attrs} title="Ver" >		
+				
+								</a>
+</span>
+{END view_link}
+{END view_column}
+	
+	</td>
+	{END cellblock_grid_cell_icons}
+				 
+					{BEGIN cellblock_grid_cell_checkbox}
+	<td
+	
+	{$cell_grid_cell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"		data-control-cell
+	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox" data-itemid="grid_checkbox" {$item_grid_checkbox} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkbox_attrs}>
+</span>	
+{END checkbox_column}
+	
+	</td>
+	{END cellblock_grid_cell_checkbox}
+				 
+					{BEGIN cellblock_grid_cell_details}
+	<td
+	
+	{$cell_grid_cell_details}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_details" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"		data-control-cell
+	
+	>
+
+	 
+			 
+		
+	{BEGIN dtables_link}
+				<span data-itemtype="grid_details_link" data-itemid="grid_details_link" {$item_grid_details_link} data-pageid="{$pageid}" data-record-id="{$recId}">
+		<a 
+			{$stock_medicamentos_link_attrs} 
+			class="{$dtables_link_class} details-badge badge stock_medicamentos_badge" 
+			title="Mostrar detalles"
+		>
+							<span class="glyphicon glyphicon-th-list"></span>
+									<span class="{$stock_medicamentos_cntspan_class}" {$stock_medicamentos_childnumber_attr}>
+				{$stock_medicamentos_childnumber}				
+			</span>
+		</a>
+		</span>
+	{END dtables_link}
+
+	
+	</td>
+	{END cellblock_grid_cell_details}
+				 
+					{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_factura_proveedor_class}
+			"
+
+			data-field="id_factura_proveedor"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_factura_proveedor_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_factura_proveedor" data-default-width >
+{$id_factura_proveedor_value}
+</span>
+{END id_factura_proveedor_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$c_digo_barras_class}
+			"
+
+			data-field="c_digo_barras"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN c_digo_barras_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="c_digo_barras" data-default-width >
+{$c_digo_barras_value}
+</span>
+{END c_digo_barras_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$descripci_n_class}
+			"
+
+			data-field="descripci_n"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN descripci_n_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="descripci_n" data-default-width >
+{$descripci_n_value}
+</span>
+{END descripci_n_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+				 
+					{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$forma_farmaceutica_class}
+			"
+
+			data-field="forma_farmaceutica"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN forma_farmaceutica_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="forma_farmaceutica" data-default-width >
+{$forma_farmaceutica_value}
+</span>
+{END forma_farmaceutica_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+				 
+					{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$concentraci_n_class}
+			"
+
+			data-field="concentraci_n"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN concentraci_n_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="concentraci_n" data-default-width >
+{$concentraci_n_value}
+</span>
+{END concentraci_n_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+				 
+					{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_producto_class}
+			"
+
+			data-field="id_producto"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_producto_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_producto" data-default-width >
+{$id_producto_value}
+</span>
+{END id_producto_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+				 
+					{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$c_digo_cnmb_class}
+			"
+
+			data-field="c_digo_cnmb"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN c_digo_cnmb_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="c_digo_cnmb" data-default-width >
+{$c_digo_cnmb_value}
+</span>
+{END c_digo_cnmb_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+				 
+					{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$fecha_fabricaci_n_class}
+			"
+
+			data-field="fecha_fabricaci_n"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN fecha_fabricaci_n_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fecha_fabricaci_n" data-default-width >
+{$fecha_fabricaci_n_value}
+</span>
+{END fecha_fabricaci_n_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+				 
+					{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$fecha_caducidad_class}
+			"
+
+			data-field="fecha_caducidad"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN fecha_caducidad_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fecha_caducidad" data-default-width >
+{$fecha_caducidad_value}
+</span>
+{END fecha_caducidad_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+				 
+					{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cantidad_class}
+			"
+
+			data-field="cantidad"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cantidad_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cantidad" data-default-width >
+{$cantidad_value}
+</span>
+{END cantidad_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+				 
+					{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$precio_unitario_class}
+			"
+
+			data-field="precio_unitario"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN precio_unitario_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="precio_unitario" data-default-width >
+{$precio_unitario_value}
+</span>
+{END precio_unitario_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+				 
+					{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$descuento_class}
+			"
+
+			data-field="descuento"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN descuento_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="descuento" data-default-width >
+{$descuento_value}
+</span>
+{END descuento_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+				 
+					{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$precio_total_class}
+			"
+
+			data-field="precio_total"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN precio_total_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="precio_total" data-default-width >
+{$precio_total_value}
+</span>
+{END precio_total_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+				 
+					{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$almacenado_class}
+			"
+
+			data-field="almacenado"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN almacenado_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="almacenado" data-default-width >
+{$almacenado_value}
+</span>
+{END almacenado_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+				 
+					{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$no_almacenado_class}
+			"
+
+			data-field="no_almacenado"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN no_almacenado_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="no_almacenado" data-default-width >
+{$no_almacenado_value}
+</span>
+{END no_almacenado_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field14}
+				 
+					{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$donaci_n_class}
+			"
+
+			data-field="donaci_n"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN donaci_n_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="donaci_n" data-default-width >
+{$donaci_n_value}
+</span>
+{END donaci_n_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+				 
+					{BEGIN cellblock_grid_cell_field16}
+	<td
+	
+	{$cell_grid_cell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$reingreso_class}
+			"
+
+			data-field="reingreso"
+	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN reingreso_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="reingreso" data-default-width >
+{$reingreso_value}
+</span>
+{END reingreso_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field16}
+				 
+					{BEGIN cellblock_grid_cell_field17}
+	<td
+	
+	{$cell_grid_cell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$observaciones_class}
+			"
+
+			data-field="observaciones"
+	
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN observaciones_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="observaciones" data-default-width >
+{$observaciones_value}
+</span>
+{END observaciones_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field17}
+				 
+					{BEGIN cellblock_grid_cell_field18}
+	<td
+	
+	{$cell_grid_cell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_u_almacenista_class}
+			"
+
+			data-field="id_u_almacenista"
+	
+	data-cellId="grid_cell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_u_almacenista_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_u_almacenista" data-default-width >
+{$id_u_almacenista_value}
+</span>
+{END id_u_almacenista_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field18}
+				 
+					{BEGIN cellblock_grid_cell_field19}
+	<td
+	
+	{$cell_grid_cell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_factura_proveedor_medicamentos_class}
+			"
+
+			data-field="id_factura_proveedor_medicamentos"
+	
+	data-cellId="grid_cell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_factura_proveedor_medicamentos_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_factura_proveedor_medicamentos" data-default-width >
+{$id_factura_proveedor_medicamentos_value}
+</span>
+{END id_factura_proveedor_medicamentos_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field19}
+							</tr>
+					 
+						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+								
+							">
+				 
+					{BEGIN cellblock_grid_cell_dpreview}
+	<td
+	
+	{$cell_grid_cell_dpreview}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_dpreview" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+			<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
+	data-orders="stock_medicamentos"
+			data-details-stock_medicamentos	>
+		<span data-details-inside data-short-table="stock_medicamentos">
+			</span>
+		<div data-details-preview>
+	</div>
+</div>
+	
+	</td>
+	{END cellblock_grid_cell_dpreview}
+							</tr>
+					 
+					
+											{END grid_row}
+					</tbody>
+													<tfoot>
+					
+		 
+					 
+					 
+					 
+						<tr {$rowattrs} {$row_grid_3} class="{$rowclass} 
+									{$gridFooter_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_footcell_icons}
+	<td
+	
+	{$cell_grid_footcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_icons}
+				 
+					{BEGIN cellblock_grid_footcell_checkbox}
+	<td
+	
+	{$cell_grid_footcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_checkbox}
+				 
+					{BEGIN cellblock_grid_footcell_details}
+	<td
+	
+	{$cell_grid_footcell_details}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_details" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_details}
+				 
+					{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+				 
+					{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+				 
+					{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+				 
+					{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+				 
+					{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+				 
+					{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+				 
+					{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+				 
+					{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+				 
+					{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
+				 
+					{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+				 
+					{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
+				 
+					{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
+				 
+					{BEGIN cellblock_grid_footcell_field13}
+	<td
+	
+	{$cell_grid_footcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field13}
+				 
+					{BEGIN cellblock_grid_footcell_field14}
+	<td
+	
+	{$cell_grid_footcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field14}
+				 
+					{BEGIN cellblock_grid_footcell_field15}
+	<td
+	
+	{$cell_grid_footcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field15}
+				 
+					{BEGIN cellblock_grid_footcell_field16}
+	<td
+	
+	{$cell_grid_footcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field16}
+				 
+					{BEGIN cellblock_grid_footcell_field17}
+	<td
+	
+	{$cell_grid_footcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field17}
+				 
+					{BEGIN cellblock_grid_footcell_field18}
+	<td
+	
+	{$cell_grid_footcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field18}
+				 
+					{BEGIN cellblock_grid_footcell_field19}
+	<td
+	
+	{$cell_grid_footcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="facturas_proveedor_medicamentos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field19}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+						</div>
+					<div class="r-below">
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+						</div>
+					{$footer}
+				</div>	
+			</div>	
+		</div>
+	{END body}
+	</body>
+</html>

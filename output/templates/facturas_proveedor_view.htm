@@ -1,0 +1,673 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c" data-pageid="{$pageid}"	{$cell_top_c}
+	class="			col-md-12
+	">
+	 
+		<img src="{$file_url images/msplogo.png}" data-itemtype="image" data-itemid="image" {$item_image} data-pageid="{$pageid}" data-page="facturas_proveedor_view" />
+	 
+		<span data-itemtype="text" data-itemid="text" {$item_text} data-pageid="{$pageid}" data-page="facturas_proveedor_view" data-small > 
+	HOSPITAL DEFINA TORRES</span>
+	</div>					</div>
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel facturas_proveedor view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_factura_proveedor_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_factura_proveedor}  r-vertical-field" data-fieldname="id_factura_proveedor" data-signal-error-for="id_factura_proveedor{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="id_factura_proveedor" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_factura_proveedor}">
+		
+		{BEGIN id_factura_proveedor_label}{$label facturas_proveedor id_factura_proveedor }{END id_factura_proveedor_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_factura_proveedor_value}	</div>
+
+		
+</div>
+
+
+{END id_factura_proveedor_fieldblock}
+											
+{BEGIN id_u_proveedor_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_u_proveedor}  r-vertical-field" data-fieldname="id_u_proveedor" data-signal-error-for="id_u_proveedor{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="id_u_proveedor" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_u_proveedor}">
+		
+		{BEGIN id_u_proveedor_label}{$label facturas_proveedor id_u_proveedor }{END id_u_proveedor_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_u_proveedor_value}	</div>
+
+		
+</div>
+
+
+{END id_u_proveedor_fieldblock}
+											
+{BEGIN factura_n_mero_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_factura_n_mero}  r-vertical-field" data-fieldname="factura_número" data-signal-error-for="factura_n_mero{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="factura_n_mero" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_factura_n_mero}">
+		
+		{BEGIN factura_n_mero_label}{$label facturas_proveedor factura_n_mero }{END factura_n_mero_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$factura_n_mero_value}	</div>
+
+		
+</div>
+
+
+{END factura_n_mero_fieldblock}
+											
+{BEGIN fecha_emisi_n_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_emisi_n}  r-vertical-field" data-fieldname="fecha_emisión" data-signal-error-for="fecha_emisi_n{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="fecha_emisi_n" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_fecha_emisi_n}">
+		
+		{BEGIN fecha_emisi_n_label}{$label facturas_proveedor fecha_emisi_n }{END fecha_emisi_n_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$fecha_emisi_n_value}	</div>
+
+		
+</div>
+
+
+{END fecha_emisi_n_fieldblock}
+											
+{BEGIN fecha_recepci_n_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_recepci_n}  r-vertical-field" data-fieldname="fecha_recepción" data-signal-error-for="fecha_recepci_n{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="fecha_recepci_n" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_fecha_recepci_n}">
+		
+		{BEGIN fecha_recepci_n_label}{$label facturas_proveedor fecha_recepci_n }{END fecha_recepci_n_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$fecha_recepci_n_value}	</div>
+
+		
+</div>
+
+
+{END fecha_recepci_n_fieldblock}
+											
+{BEGIN subtotal_grava_iva_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_subtotal_grava_iva}  r-vertical-field" data-fieldname="subtotal_grava_iva" data-signal-error-for="subtotal_grava_iva{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="subtotal_grava_iva" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_subtotal_grava_iva}">
+		
+		{BEGIN subtotal_grava_iva_label}{$label facturas_proveedor subtotal_grava_iva }{END subtotal_grava_iva_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$subtotal_grava_iva_value}	</div>
+
+		
+</div>
+
+
+{END subtotal_grava_iva_fieldblock}
+											
+{BEGIN subtotal_iva_0_medicinas_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_subtotal_iva_0_medicinas}  r-vertical-field" data-fieldname="subtotal_iva_0_medicinas" data-signal-error-for="subtotal_iva_0_medicinas{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="subtotal_iva_0_medicinas" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_subtotal_iva_0_medicinas}">
+		
+		{BEGIN subtotal_iva_0_medicinas_label}{$label facturas_proveedor subtotal_iva_0_medicinas }{END subtotal_iva_0_medicinas_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$subtotal_iva_0_medicinas_value}	</div>
+
+		
+</div>
+
+
+{END subtotal_iva_0_medicinas_fieldblock}
+											
+{BEGIN subtotal_iva_0_equipos_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_subtotal_iva_0_equipos}  r-vertical-field" data-fieldname="subtotal_iva_0_equipos" data-signal-error-for="subtotal_iva_0_equipos{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="subtotal_iva_0_equipos" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_subtotal_iva_0_equipos}">
+		
+		{BEGIN subtotal_iva_0_equipos_label}{$label facturas_proveedor subtotal_iva_0_equipos }{END subtotal_iva_0_equipos_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$subtotal_iva_0_equipos_value}	</div>
+
+		
+</div>
+
+
+{END subtotal_iva_0_equipos_fieldblock}
+											
+{BEGIN subtotal_no_objeto_iva_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_subtotal_no_objeto_iva}  r-vertical-field" data-fieldname="subtotal_no_objeto_iva" data-signal-error-for="subtotal_no_objeto_iva{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="subtotal_no_objeto_iva" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_subtotal_no_objeto_iva}">
+		
+		{BEGIN subtotal_no_objeto_iva_label}{$label facturas_proveedor subtotal_no_objeto_iva }{END subtotal_no_objeto_iva_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$subtotal_no_objeto_iva_value}	</div>
+
+		
+</div>
+
+
+{END subtotal_no_objeto_iva_fieldblock}
+											
+{BEGIN subtotal_excento_iva_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_subtotal_excento_iva}  r-vertical-field" data-fieldname="subtotal_excento_iva" data-signal-error-for="subtotal_excento_iva{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="subtotal_excento_iva" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_subtotal_excento_iva}">
+		
+		{BEGIN subtotal_excento_iva_label}{$label facturas_proveedor subtotal_excento_iva }{END subtotal_excento_iva_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$subtotal_excento_iva_value}	</div>
+
+		
+</div>
+
+
+{END subtotal_excento_iva_fieldblock}
+											
+{BEGIN subtotal_sin_impuestos_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_subtotal_sin_impuestos}  r-vertical-field" data-fieldname="subtotal_sin_impuestos" data-signal-error-for="subtotal_sin_impuestos{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="subtotal_sin_impuestos" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_subtotal_sin_impuestos}">
+		
+		{BEGIN subtotal_sin_impuestos_label}{$label facturas_proveedor subtotal_sin_impuestos }{END subtotal_sin_impuestos_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$subtotal_sin_impuestos_value}	</div>
+
+		
+</div>
+
+
+{END subtotal_sin_impuestos_fieldblock}
+											
+{BEGIN total_descuento_grava_iva_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_total_descuento_grava_iva}  r-vertical-field" data-fieldname="total_descuento_grava_iva" data-signal-error-for="total_descuento_grava_iva{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="total_descuento_grava_iva" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_total_descuento_grava_iva}">
+		
+		{BEGIN total_descuento_grava_iva_label}{$label facturas_proveedor total_descuento_grava_iva }{END total_descuento_grava_iva_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$total_descuento_grava_iva_value}	</div>
+
+		
+</div>
+
+
+{END total_descuento_grava_iva_fieldblock}
+											
+{BEGIN total_descuento_iva_0_medicinas_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_total_descuento_iva_0_medicinas}  r-vertical-field" data-fieldname="total_descuento_iva_0_medicinas" data-signal-error-for="total_descuento_iva_0_medicinas{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="total_descuento_iva_0_medicinas" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_total_descuento_iva_0_medicinas}">
+		
+		{BEGIN total_descuento_iva_0_medicinas_label}{$label facturas_proveedor total_descuento_iva_0_medicinas }{END total_descuento_iva_0_medicinas_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$total_descuento_iva_0_medicinas_value}	</div>
+
+		
+</div>
+
+
+{END total_descuento_iva_0_medicinas_fieldblock}
+											
+{BEGIN total_descuento_iva_0_equipos_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_total_descuento_iva_0_equipos}  r-vertical-field" data-fieldname="total_descuento_iva_0_equipos" data-signal-error-for="total_descuento_iva_0_equipos{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="total_descuento_iva_0_equipos" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_total_descuento_iva_0_equipos}">
+		
+		{BEGIN total_descuento_iva_0_equipos_label}{$label facturas_proveedor total_descuento_iva_0_equipos }{END total_descuento_iva_0_equipos_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$total_descuento_iva_0_equipos_value}	</div>
+
+		
+</div>
+
+
+{END total_descuento_iva_0_equipos_fieldblock}
+											
+{BEGIN total_descuento_excento_iva_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_total_descuento_excento_iva}  r-vertical-field" data-fieldname="total_descuento_excento_iva" data-signal-error-for="total_descuento_excento_iva{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="total_descuento_excento_iva" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_total_descuento_excento_iva}">
+		
+		{BEGIN total_descuento_excento_iva_label}{$label facturas_proveedor total_descuento_excento_iva }{END total_descuento_excento_iva_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$total_descuento_excento_iva_value}	</div>
+
+		
+</div>
+
+
+{END total_descuento_excento_iva_fieldblock}
+											
+{BEGIN total_descuento_sin_impuestos_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_total_descuento_sin_impuestos}  r-vertical-field" data-fieldname="total_descuento_sin_impuestos" data-signal-error-for="total_descuento_sin_impuestos{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="total_descuento_sin_impuestos" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_total_descuento_sin_impuestos}">
+		
+		{BEGIN total_descuento_sin_impuestos_label}{$label facturas_proveedor total_descuento_sin_impuestos }{END total_descuento_sin_impuestos_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$total_descuento_sin_impuestos_value}	</div>
+
+		
+</div>
+
+
+{END total_descuento_sin_impuestos_fieldblock}
+											
+{BEGIN iva_gravado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_iva_gravado}  r-vertical-field" data-fieldname="iva_gravado" data-signal-error-for="iva_gravado{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="iva_gravado" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_iva_gravado}">
+		
+		{BEGIN iva_gravado_label}{$label facturas_proveedor iva_gravado }{END iva_gravado_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$iva_gravado_value}	</div>
+
+		
+</div>
+
+
+{END iva_gravado_fieldblock}
+											
+{BEGIN iva_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_iva}  r-vertical-field" data-fieldname="iva" data-signal-error-for="iva{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="iva" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_iva}">
+		
+		{BEGIN iva_label}{$label facturas_proveedor iva }{END iva_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$iva_value}	</div>
+
+		
+</div>
+
+
+{END iva_fieldblock}
+											
+{BEGIN ice_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ice}  r-vertical-field" data-fieldname="ice" data-signal-error-for="ice{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="ice" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ice}">
+		
+		{BEGIN ice_label}{$label facturas_proveedor ice }{END ice_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ice_value}	</div>
+
+		
+</div>
+
+
+{END ice_fieldblock}
+											
+{BEGIN irbpnr_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_irbpnr}  r-vertical-field" data-fieldname="irbpnr" data-signal-error-for="irbpnr{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="irbpnr" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_irbpnr}">
+		
+		{BEGIN irbpnr_label}{$label facturas_proveedor irbpnr }{END irbpnr_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$irbpnr_value}	</div>
+
+		
+</div>
+
+
+{END irbpnr_fieldblock}
+											
+{BEGIN valor_total_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_valor_total}  r-vertical-field" data-fieldname="valor_total" data-signal-error-for="valor_total{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="valor_total" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_valor_total}">
+		
+		{BEGIN valor_total_label}{$label facturas_proveedor valor_total }{END valor_total_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$valor_total_value}	</div>
+
+		
+</div>
+
+
+{END valor_total_fieldblock}
+											
+{BEGIN donaci_n_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_donaci_n}  r-vertical-field" data-fieldname="donación" data-signal-error-for="donaci_n{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="donaci_n" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_donaci_n}">
+		
+		{BEGIN donaci_n_label}{$label facturas_proveedor donaci_n }{END donaci_n_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$donaci_n_value}	</div>
+
+		
+</div>
+
+
+{END donaci_n_fieldblock}
+											
+{BEGIN reingreso_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_reingreso}  r-vertical-field" data-fieldname="reingreso" data-signal-error-for="reingreso{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="reingreso" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_reingreso}">
+		
+		{BEGIN reingreso_label}{$label facturas_proveedor reingreso }{END reingreso_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$reingreso_value}	</div>
+
+		
+</div>
+
+
+{END reingreso_fieldblock}
+											
+{BEGIN observaciones_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_observaciones}  r-vertical-field" data-fieldname="observaciones" data-signal-error-for="observaciones{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="observaciones" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_observaciones}">
+		
+		{BEGIN observaciones_label}{$label facturas_proveedor observaciones }{END observaciones_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$observaciones_value}	</div>
+
+		
+</div>
+
+
+{END observaciones_fieldblock}
+											
+{BEGIN id_u_almacenista_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_u_almacenista}  r-vertical-field" data-fieldname="id_u_almacenista" data-signal-error-for="id_u_almacenista{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="id_u_almacenista" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_u_almacenista}">
+		
+		{BEGIN id_u_almacenista_label}{$label facturas_proveedor id_u_almacenista }{END id_u_almacenista_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_u_almacenista_value}	</div>
+
+		
+</div>
+
+
+{END id_u_almacenista_fieldblock}
+										</td>
+			{END cellblock_grid_c3}
+										</tr>
+										</tbody></table>
+				
+{BEGIN details_facturas_proveedor_equipos}
+<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" class="bs-details"> 
+	<div class="panel panel-info details-grid">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+							{$caption facturas_proveedor_equipos }				
+							<span>
+					{$detailslButtons_facturas_proveedor_equipos}
+																				</span>
+			</h4>
+		</div>
+		<div class="panel-body">
+			{$displayDetailTable_facturas_proveedor_equipos}
+		</div>
+	</div>
+</div>
+{END details_facturas_proveedor_equipos}
+	
+				{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Cerrar ventana			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="facturas_proveedor_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Editar		
+		</a>
+	</li>
+{END edit_page_button}
+								<li data-itemtype="view_pdf" data-itemid="view_pdf" {$item_view_pdf} data-pageid="{$pageid}" data-small >
+				<a class="pdflink" data-pdfpage="view" 
+data-scope="0" 
+data-split="0" 
+data-records="10" 
+data-orientation="portrait" 
+data-scale="100" 
+data-filename="Facturas Proveedor.pdf" 
+data-pagetype="view" 
+{$pdflink_attrs}  title="" >
+				
+		Vista PDF		
+		</a>
+	</li>
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

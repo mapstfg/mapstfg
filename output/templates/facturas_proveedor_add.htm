@@ -1,0 +1,352 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c" data-pageid="{$pageid}"	{$cell_top_c}
+	class="			col-md-12
+	">
+	 
+		<img src="{$file_url images/msplogo.png}" data-itemtype="image" data-itemid="image" {$item_image} data-pageid="{$pageid}" data-page="facturas_proveedor_add" />
+	 
+		<span data-itemtype="text" data-itemid="text" {$item_text} data-pageid="{$pageid}" data-page="facturas_proveedor_add" data-small > 
+	HOSPITAL DEFINA TORRES</span>
+	</div>					</div>
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel facturas_proveedor add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Ver</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Editar</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_u_proveedor_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_u_proveedor}  r-vertical-field" 
+	data-fieldname="id_u_proveedor" 
+	data-signal-error-for="id_u_proveedor{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="id_u_proveedor" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_id_u_proveedor}">
+		{BEGIN id_u_proveedor_label}{$label facturas_proveedor id_u_proveedor }{END id_u_proveedor_label}
+	</label>
+	<div class="r-edit-field">
+		{$id_u_proveedor_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="id_u_proveedor">
+		<div class="text-muted" >
+		{$tooltip facturas_proveedor id_u_proveedor }		</div>
+	</div>
+</div>
+
+
+{END id_u_proveedor_fieldblock}
+											
+{BEGIN factura_n_mero_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_factura_n_mero}  r-vertical-field" 
+	data-fieldname="factura_número" 
+	data-signal-error-for="factura_n_mero{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="factura_n_mero" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_factura_n_mero}">
+		{BEGIN factura_n_mero_label}{$label facturas_proveedor factura_n_mero }{END factura_n_mero_label}
+	</label>
+	<div class="r-edit-field">
+		{$factura_n_mero_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="factura_n_mero">
+		<div class="text-muted" >
+		{$tooltip facturas_proveedor factura_n_mero }		</div>
+	</div>
+</div>
+
+
+{END factura_n_mero_fieldblock}
+											
+{BEGIN fecha_emisi_n_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_emisi_n}  r-vertical-field" 
+	data-fieldname="fecha_emisión" 
+	data-signal-error-for="fecha_emisi_n{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="fecha_emisi_n" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_fecha_emisi_n}">
+		{BEGIN fecha_emisi_n_label}{$label facturas_proveedor fecha_emisi_n }{END fecha_emisi_n_label}
+	</label>
+	<div class="r-edit-field">
+		{$fecha_emisi_n_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="fecha_emisi_n">
+		<div class="text-muted" >
+		{$tooltip facturas_proveedor fecha_emisi_n }		</div>
+	</div>
+</div>
+
+
+{END fecha_emisi_n_fieldblock}
+											
+{BEGIN fecha_recepci_n_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_recepci_n}  r-vertical-field" 
+	data-fieldname="fecha_recepción" 
+	data-signal-error-for="fecha_recepci_n{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="fecha_recepci_n" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_fecha_recepci_n}">
+		{BEGIN fecha_recepci_n_label}{$label facturas_proveedor fecha_recepci_n }{END fecha_recepci_n_label}
+	</label>
+	<div class="r-edit-field">
+		{$fecha_recepci_n_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="fecha_recepci_n">
+		<div class="text-muted" >
+		{$tooltip facturas_proveedor fecha_recepci_n }		</div>
+	</div>
+</div>
+
+
+{END fecha_recepci_n_fieldblock}
+											
+{BEGIN donaci_n_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_donaci_n}  r-vertical-field" 
+	data-fieldname="donación" 
+	data-signal-error-for="donaci_n{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="donaci_n" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_donaci_n}">
+		{BEGIN donaci_n_label}{$label facturas_proveedor donaci_n }{END donaci_n_label}
+	</label>
+	<div class="r-edit-field">
+		{$donaci_n_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="donaci_n">
+		<div class="text-muted" >
+		{$tooltip facturas_proveedor donaci_n }		</div>
+	</div>
+</div>
+
+
+{END donaci_n_fieldblock}
+											
+{BEGIN reingreso_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_reingreso}  r-vertical-field" 
+	data-fieldname="reingreso" 
+	data-signal-error-for="reingreso{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="reingreso" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_reingreso}">
+		{BEGIN reingreso_label}{$label facturas_proveedor reingreso }{END reingreso_label}
+	</label>
+	<div class="r-edit-field">
+		{$reingreso_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="reingreso">
+		<div class="text-muted" >
+		{$tooltip facturas_proveedor reingreso }		</div>
+	</div>
+</div>
+
+
+{END reingreso_fieldblock}
+											
+{BEGIN observaciones_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_observaciones}  r-vertical-field" 
+	data-fieldname="observaciones" 
+	data-signal-error-for="observaciones{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="observaciones" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_observaciones}">
+		{BEGIN observaciones_label}{$label facturas_proveedor observaciones }{END observaciones_label}
+	</label>
+	<div class="r-edit-field">
+		{$observaciones_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="observaciones">
+		<div class="text-muted" >
+		{$tooltip facturas_proveedor observaciones }		</div>
+	</div>
+</div>
+
+
+{END observaciones_fieldblock}
+										</td>
+			{END cellblock_grid_c3}
+										</tr>
+										</tbody></table>
+				
+{BEGIN details_facturas_proveedor_equipos}
+<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" class="bs-details"> 
+	<div class="panel panel-info details-grid">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+							{$caption facturas_proveedor_equipos }				
+							<span>
+					{$detailslButtons_facturas_proveedor_equipos}
+																				</span>
+			</h4>
+		</div>
+		<div class="panel-body">
+			{$displayDetailTable_facturas_proveedor_equipos}
+		</div>
+	</div>
+</div>
+{END details_facturas_proveedor_equipos}
+	
+				{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

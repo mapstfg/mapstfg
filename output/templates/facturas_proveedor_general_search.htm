@@ -1,0 +1,566 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel facturas_proveedor_general search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_factura_proveedor_general_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_factura_proveedor_general}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id_factura_proveedor_general" 
+	
+	data-signal-error-for="id_factura_proveedor_general{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="id_factura_proveedor_general" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_factura_proveedor_general}">
+		{$label facturas_proveedor_general id_factura_proveedor_general }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_factura_proveedor_general}
+	</div>
+	<div class="r-search-field">
+		{$id_factura_proveedor_general_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_factura_proveedor_general_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_factura_proveedor_general_fieldblock}
+											
+{BEGIN id_factura_proveedor_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_factura_proveedor}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id_factura_proveedor" 
+	
+	data-signal-error-for="id_factura_proveedor{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="id_factura_proveedor" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_factura_proveedor}">
+		{$label facturas_proveedor_general id_factura_proveedor }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_factura_proveedor}
+	</div>
+	<div class="r-search-field">
+		{$id_factura_proveedor_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_factura_proveedor_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_factura_proveedor_fieldblock}
+											
+{BEGIN c_digo_barras_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_c_digo_barras}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="código_barras" 
+	
+	data-signal-error-for="c_digo_barras{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="c_digo_barras" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_c_digo_barras}">
+		{$label facturas_proveedor_general c_digo_barras }	</label>
+	<div class="r-search-option">
+		{$searchtype_c_digo_barras}
+	</div>
+	<div class="r-search-field">
+		{$c_digo_barras_editcontrol}	</div>
+	<div class="r-search-field">
+		{$c_digo_barras_editcontrol1}
+	</div>
+	
+</div>
+
+{END c_digo_barras_fieldblock}
+											
+{BEGIN id_producto_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_producto}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id_producto" 
+	
+	data-signal-error-for="id_producto{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="id_producto" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_producto}">
+		{$label facturas_proveedor_general id_producto }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_producto}
+	</div>
+	<div class="r-search-field">
+		{$id_producto_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_producto_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_producto_fieldblock}
+											
+{BEGIN descripci_n_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_descripci_n}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="descripción" 
+	
+	data-signal-error-for="descripci_n{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="descripci_n" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_descripci_n}">
+		{$label facturas_proveedor_general descripci_n }	</label>
+	<div class="r-search-option">
+		{$searchtype_descripci_n}
+	</div>
+	<div class="r-search-field">
+		{$descripci_n_editcontrol}	</div>
+	<div class="r-search-field">
+		{$descripci_n_editcontrol1}
+	</div>
+	
+</div>
+
+{END descripci_n_fieldblock}
+											
+{BEGIN cantidad_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cantidad}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="cantidad" 
+	
+	data-signal-error-for="cantidad{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="cantidad" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cantidad}">
+		{$label facturas_proveedor_general cantidad }	</label>
+	<div class="r-search-option">
+		{$searchtype_cantidad}
+	</div>
+	<div class="r-search-field">
+		{$cantidad_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cantidad_editcontrol1}
+	</div>
+	
+</div>
+
+{END cantidad_fieldblock}
+											
+{BEGIN precio_unitario_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_precio_unitario}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="precio_unitario" 
+	
+	data-signal-error-for="precio_unitario{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="precio_unitario" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_precio_unitario}">
+		{$label facturas_proveedor_general precio_unitario }	</label>
+	<div class="r-search-option">
+		{$searchtype_precio_unitario}
+	</div>
+	<div class="r-search-field">
+		{$precio_unitario_editcontrol}	</div>
+	<div class="r-search-field">
+		{$precio_unitario_editcontrol1}
+	</div>
+	
+</div>
+
+{END precio_unitario_fieldblock}
+											
+{BEGIN descuento_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_descuento}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="descuento" 
+	
+	data-signal-error-for="descuento{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="descuento" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_descuento}">
+		{$label facturas_proveedor_general descuento }	</label>
+	<div class="r-search-option">
+		{$searchtype_descuento}
+	</div>
+	<div class="r-search-field">
+		{$descuento_editcontrol}	</div>
+	<div class="r-search-field">
+		{$descuento_editcontrol1}
+	</div>
+	
+</div>
+
+{END descuento_fieldblock}
+											
+{BEGIN precio_total_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_precio_total}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="precio_total" 
+	
+	data-signal-error-for="precio_total{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="precio_total" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_precio_total}">
+		{$label facturas_proveedor_general precio_total }	</label>
+	<div class="r-search-option">
+		{$searchtype_precio_total}
+	</div>
+	<div class="r-search-field">
+		{$precio_total_editcontrol}	</div>
+	<div class="r-search-field">
+		{$precio_total_editcontrol1}
+	</div>
+	
+</div>
+
+{END precio_total_fieldblock}
+											
+{BEGIN fecha_fabricaci_n_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_fabricaci_n}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="fecha_fabricación" 
+	
+	data-signal-error-for="fecha_fabricaci_n{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="fecha_fabricaci_n" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_fecha_fabricaci_n}">
+		{$label facturas_proveedor_general fecha_fabricaci_n }	</label>
+	<div class="r-search-option">
+		{$searchtype_fecha_fabricaci_n}
+	</div>
+	<div class="r-search-field">
+		{$fecha_fabricaci_n_editcontrol}	</div>
+	<div class="r-search-field">
+		{$fecha_fabricaci_n_editcontrol1}
+	</div>
+	
+</div>
+
+{END fecha_fabricaci_n_fieldblock}
+											
+{BEGIN fecha_caducidad_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_caducidad}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="fecha_caducidad" 
+	
+	data-signal-error-for="fecha_caducidad{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="fecha_caducidad" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_fecha_caducidad}">
+		{$label facturas_proveedor_general fecha_caducidad }	</label>
+	<div class="r-search-option">
+		{$searchtype_fecha_caducidad}
+	</div>
+	<div class="r-search-field">
+		{$fecha_caducidad_editcontrol}	</div>
+	<div class="r-search-field">
+		{$fecha_caducidad_editcontrol1}
+	</div>
+	
+</div>
+
+{END fecha_caducidad_fieldblock}
+											
+{BEGIN donaci_n_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_donaci_n}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="donación" 
+	
+	data-signal-error-for="donaci_n{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="donaci_n" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_donaci_n}">
+		{$label facturas_proveedor_general donaci_n }	</label>
+	<div class="r-search-option">
+		{$searchtype_donaci_n}
+	</div>
+	<div class="r-search-field">
+		{$donaci_n_editcontrol}	</div>
+	<div class="r-search-field">
+		{$donaci_n_editcontrol1}
+	</div>
+	
+</div>
+
+{END donaci_n_fieldblock}
+											
+{BEGIN reingreso_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_reingreso}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="reingreso" 
+	
+	data-signal-error-for="reingreso{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="reingreso" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_reingreso}">
+		{$label facturas_proveedor_general reingreso }	</label>
+	<div class="r-search-option">
+		{$searchtype_reingreso}
+	</div>
+	<div class="r-search-field">
+		{$reingreso_editcontrol}	</div>
+	<div class="r-search-field">
+		{$reingreso_editcontrol1}
+	</div>
+	
+</div>
+
+{END reingreso_fieldblock}
+											
+{BEGIN observaciones_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_observaciones}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="observaciones" 
+	
+	data-signal-error-for="observaciones{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="observaciones" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_observaciones}">
+		{$label facturas_proveedor_general observaciones }	</label>
+	<div class="r-search-option">
+		{$searchtype_observaciones}
+	</div>
+	<div class="r-search-field">
+		{$observaciones_editcontrol}	</div>
+	<div class="r-search-field">
+		{$observaciones_editcontrol1}
+	</div>
+	
+</div>
+
+{END observaciones_fieldblock}
+											
+{BEGIN almacenado_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_almacenado}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="almacenado" 
+	
+	data-signal-error-for="almacenado{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="almacenado" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_almacenado}">
+		{$label facturas_proveedor_general almacenado }	</label>
+	<div class="r-search-option">
+		{$searchtype_almacenado}
+	</div>
+	<div class="r-search-field">
+		{$almacenado_editcontrol}	</div>
+	<div class="r-search-field">
+		{$almacenado_editcontrol1}
+	</div>
+	
+</div>
+
+{END almacenado_fieldblock}
+											
+{BEGIN no_almacenado_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_no_almacenado}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="no_almacenado" 
+	
+	data-signal-error-for="no_almacenado{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="no_almacenado" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_no_almacenado}">
+		{$label facturas_proveedor_general no_almacenado }	</label>
+	<div class="r-search-option">
+		{$searchtype_no_almacenado}
+	</div>
+	<div class="r-search-field">
+		{$no_almacenado_editcontrol}	</div>
+	<div class="r-search-field">
+		{$no_almacenado_editcontrol1}
+	</div>
+	
+</div>
+
+{END no_almacenado_fieldblock}
+											
+{BEGIN id_u_almacenista_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_u_almacenista}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id_u_almacenista" 
+	
+	data-signal-error-for="id_u_almacenista{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="id_u_almacenista" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_u_almacenista}">
+		{$label facturas_proveedor_general id_u_almacenista }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_u_almacenista}
+	</div>
+	<div class="r-search-field">
+		{$id_u_almacenista_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_u_almacenista_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_u_almacenista_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
