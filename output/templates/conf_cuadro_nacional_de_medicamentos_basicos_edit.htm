@@ -1,0 +1,509 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel conf_cuadro_nacional_de_medicamentos_basicos edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Ver</button>
+{END view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN c_digo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_c_digo}  r-vertical-field" 
+	data-fieldname="código" 
+	data-signal-error-for="c_digo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="c_digo" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_c_digo}">
+		{BEGIN c_digo_label}{$label conf_cuadro_nacional_de_medicamentos_basicos c_digo }{END c_digo_label}
+	</label>
+	<div class="r-edit-field">
+		{$c_digo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="c_digo">
+		<div class="text-muted" >
+		{$tooltip conf_cuadro_nacional_de_medicamentos_basicos c_digo }		</div>
+	</div>
+</div>
+
+
+{END c_digo_fieldblock}
+											
+{BEGIN descripci_n_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_descripci_n}  r-vertical-field" 
+	data-fieldname="descripción" 
+	data-signal-error-for="descripci_n{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="descripci_n" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_descripci_n}">
+		{BEGIN descripci_n_label}{$label conf_cuadro_nacional_de_medicamentos_basicos descripci_n }{END descripci_n_label}
+	</label>
+	<div class="r-edit-field">
+		{$descripci_n_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="descripci_n">
+		<div class="text-muted" >
+		{$tooltip conf_cuadro_nacional_de_medicamentos_basicos descripci_n }		</div>
+	</div>
+</div>
+
+
+{END descripci_n_fieldblock}
+											
+{BEGIN forma_farmac_utica_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_forma_farmac_utica}  r-vertical-field" 
+	data-fieldname="forma_farmacéutica" 
+	data-signal-error-for="forma_farmac_utica{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="forma_farmac_utica" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_forma_farmac_utica}">
+		{BEGIN forma_farmac_utica_label}{$label conf_cuadro_nacional_de_medicamentos_basicos forma_farmac_utica }{END forma_farmac_utica_label}
+	</label>
+	<div class="r-edit-field">
+		{$forma_farmac_utica_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="forma_farmac_utica">
+		<div class="text-muted" >
+		{$tooltip conf_cuadro_nacional_de_medicamentos_basicos forma_farmac_utica }		</div>
+	</div>
+</div>
+
+
+{END forma_farmac_utica_fieldblock}
+											
+{BEGIN concentraci_n_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_concentraci_n}  r-vertical-field" 
+	data-fieldname="concentración" 
+	data-signal-error-for="concentraci_n{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="concentraci_n" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_concentraci_n}">
+		{BEGIN concentraci_n_label}{$label conf_cuadro_nacional_de_medicamentos_basicos concentraci_n }{END concentraci_n_label}
+	</label>
+	<div class="r-edit-field">
+		{$concentraci_n_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="concentraci_n">
+		<div class="text-muted" >
+		{$tooltip conf_cuadro_nacional_de_medicamentos_basicos concentraci_n }		</div>
+	</div>
+</div>
+
+
+{END concentraci_n_fieldblock}
+											
+{BEGIN nivel_prescripci_n_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nivel_prescripci_n}  r-vertical-field" 
+	data-fieldname="nivel_prescripción" 
+	data-signal-error-for="nivel_prescripci_n{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="nivel_prescripci_n" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_nivel_prescripci_n}">
+		{BEGIN nivel_prescripci_n_label}{$label conf_cuadro_nacional_de_medicamentos_basicos nivel_prescripci_n }{END nivel_prescripci_n_label}
+	</label>
+	<div class="r-edit-field">
+		{$nivel_prescripci_n_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nivel_prescripci_n">
+		<div class="text-muted" >
+		{$tooltip conf_cuadro_nacional_de_medicamentos_basicos nivel_prescripci_n }		</div>
+	</div>
+</div>
+
+
+{END nivel_prescripci_n_fieldblock}
+											
+{BEGIN nivel_atenci_n_1_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nivel_atenci_n_1}  r-vertical-field" 
+	data-fieldname="nivel_atención_1" 
+	data-signal-error-for="nivel_atenci_n_1{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="nivel_atenci_n_1" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_nivel_atenci_n_1}">
+		{BEGIN nivel_atenci_n_1_label}{$label conf_cuadro_nacional_de_medicamentos_basicos nivel_atenci_n_1 }{END nivel_atenci_n_1_label}
+	</label>
+	<div class="r-edit-field">
+		{$nivel_atenci_n_1_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nivel_atenci_n_1">
+		<div class="text-muted" >
+		{$tooltip conf_cuadro_nacional_de_medicamentos_basicos nivel_atenci_n_1 }		</div>
+	</div>
+</div>
+
+
+{END nivel_atenci_n_1_fieldblock}
+											
+{BEGIN nivel_atenci_n_2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nivel_atenci_n_2}  r-vertical-field" 
+	data-fieldname="nivel_atención_2" 
+	data-signal-error-for="nivel_atenci_n_2{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="nivel_atenci_n_2" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_nivel_atenci_n_2}">
+		{BEGIN nivel_atenci_n_2_label}{$label conf_cuadro_nacional_de_medicamentos_basicos nivel_atenci_n_2 }{END nivel_atenci_n_2_label}
+	</label>
+	<div class="r-edit-field">
+		{$nivel_atenci_n_2_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nivel_atenci_n_2">
+		<div class="text-muted" >
+		{$tooltip conf_cuadro_nacional_de_medicamentos_basicos nivel_atenci_n_2 }		</div>
+	</div>
+</div>
+
+
+{END nivel_atenci_n_2_fieldblock}
+											
+{BEGIN nivel_atenci_n_3_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nivel_atenci_n_3}  r-vertical-field" 
+	data-fieldname="nivel_atención_3" 
+	data-signal-error-for="nivel_atenci_n_3{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="nivel_atenci_n_3" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_nivel_atenci_n_3}">
+		{BEGIN nivel_atenci_n_3_label}{$label conf_cuadro_nacional_de_medicamentos_basicos nivel_atenci_n_3 }{END nivel_atenci_n_3_label}
+	</label>
+	<div class="r-edit-field">
+		{$nivel_atenci_n_3_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nivel_atenci_n_3">
+		<div class="text-muted" >
+		{$tooltip conf_cuadro_nacional_de_medicamentos_basicos nivel_atenci_n_3 }		</div>
+	</div>
+</div>
+
+
+{END nivel_atenci_n_3_fieldblock}
+											
+{BEGIN v_a_administrativa_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_v_a_administrativa}  r-vertical-field" 
+	data-fieldname="vía_administrativa" 
+	data-signal-error-for="v_a_administrativa{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="v_a_administrativa" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_v_a_administrativa}">
+		{BEGIN v_a_administrativa_label}{$label conf_cuadro_nacional_de_medicamentos_basicos v_a_administrativa }{END v_a_administrativa_label}
+	</label>
+	<div class="r-edit-field">
+		{$v_a_administrativa_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="v_a_administrativa">
+		<div class="text-muted" >
+		{$tooltip conf_cuadro_nacional_de_medicamentos_basicos v_a_administrativa }		</div>
+	</div>
+</div>
+
+
+{END v_a_administrativa_fieldblock}
+											
+{BEGIN uso_exclusivo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_uso_exclusivo}  r-vertical-field" 
+	data-fieldname="uso_exclusivo" 
+	data-signal-error-for="uso_exclusivo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="uso_exclusivo" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_uso_exclusivo}">
+		{BEGIN uso_exclusivo_label}{$label conf_cuadro_nacional_de_medicamentos_basicos uso_exclusivo }{END uso_exclusivo_label}
+	</label>
+	<div class="r-edit-field">
+		{$uso_exclusivo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="uso_exclusivo">
+		<div class="text-muted" >
+		{$tooltip conf_cuadro_nacional_de_medicamentos_basicos uso_exclusivo }		</div>
+	</div>
+</div>
+
+
+{END uso_exclusivo_fieldblock}
+											
+{BEGIN valor_unitario_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_valor_unitario}  r-vertical-field" 
+	data-fieldname="valor_unitario" 
+	data-signal-error-for="valor_unitario{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="valor_unitario" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_valor_unitario}">
+		{BEGIN valor_unitario_label}{$label conf_cuadro_nacional_de_medicamentos_basicos valor_unitario }{END valor_unitario_label}
+	</label>
+	<div class="r-edit-field">
+		{$valor_unitario_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="valor_unitario">
+		<div class="text-muted" >
+		{$tooltip conf_cuadro_nacional_de_medicamentos_basicos valor_unitario }		</div>
+	</div>
+</div>
+
+
+{END valor_unitario_fieldblock}
+											
+{BEGIN restingido_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_restingido}  r-vertical-field" 
+	data-fieldname="restingido" 
+	data-signal-error-for="restingido{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="restingido" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_restingido}">
+		{BEGIN restingido_label}{$label conf_cuadro_nacional_de_medicamentos_basicos restingido }{END restingido_label}
+	</label>
+	<div class="r-edit-field">
+		{$restingido_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="restingido">
+		<div class="text-muted" >
+		{$tooltip conf_cuadro_nacional_de_medicamentos_basicos restingido }		</div>
+	</div>
+</div>
+
+
+{END restingido_fieldblock}
+											
+{BEGIN autorizados_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_autorizados}  r-vertical-field" 
+	data-fieldname="autorizados" 
+	data-signal-error-for="autorizados{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="autorizados" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_autorizados}">
+		{BEGIN autorizados_label}{$label conf_cuadro_nacional_de_medicamentos_basicos autorizados }{END autorizados_label}
+	</label>
+	<div class="r-edit-field">
+		{$autorizados_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="autorizados">
+		<div class="text-muted" >
+		{$tooltip conf_cuadro_nacional_de_medicamentos_basicos autorizados }		</div>
+	</div>
+</div>
+
+
+{END autorizados_fieldblock}
+											
+{BEGIN id_tecnico_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_tecnico}  r-vertical-field" 
+	data-fieldname="id_tecnico" 
+	data-signal-error-for="id_tecnico{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="id_tecnico" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_id_tecnico}">
+		{BEGIN id_tecnico_label}{$label conf_cuadro_nacional_de_medicamentos_basicos id_tecnico }{END id_tecnico_label}
+	</label>
+	<div class="r-edit-field">
+		{$id_tecnico_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="id_tecnico">
+		<div class="text-muted" >
+		{$tooltip conf_cuadro_nacional_de_medicamentos_basicos id_tecnico }		</div>
+	</div>
+</div>
+
+
+{END id_tecnico_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Cancelar			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Reiniciar		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  href="conf_cuadro_nacional_de_medicamentos_basicos_view.php?{$editlink}" {$view_page_button_attrs}  title="" >
+				
+		Ver		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

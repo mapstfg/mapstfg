@@ -1,0 +1,1859 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo1" {$item_logo1}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo1" {$item_logo1} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Expand" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main}			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}" >
+
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Búsqueda			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Mostrar opciones</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>todas las condiciones</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>cualquier condición</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>esconder</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_autorizados}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_autorizados}" {$filterRow_attrs_autorizados}>
+			<label>{$label conf_cuadro_nacional_de_medicamentos_basicos autorizados }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_autorizados}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_autorizados}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_autorizados}</span>
+						</div>
+		{END searchCtrlBlock_autorizados}
+																{BEGIN searchCtrlBlock_v_a_administrativa}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_v_a_administrativa}" {$filterRow_attrs_v_a_administrativa}>
+			<label>{$label conf_cuadro_nacional_de_medicamentos_basicos v_a_administrativa }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_v_a_administrativa}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_v_a_administrativa}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_v_a_administrativa}</span>
+						</div>
+		{END searchCtrlBlock_v_a_administrativa}
+																{BEGIN searchCtrlBlock_valor_unitario}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_valor_unitario}" {$filterRow_attrs_valor_unitario}>
+			<label>{$label conf_cuadro_nacional_de_medicamentos_basicos valor_unitario }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_valor_unitario}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_valor_unitario}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_valor_unitario}</span>
+						</div>
+		{END searchCtrlBlock_valor_unitario}
+																{BEGIN searchCtrlBlock_uso_exclusivo}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_uso_exclusivo}" {$filterRow_attrs_uso_exclusivo}>
+			<label>{$label conf_cuadro_nacional_de_medicamentos_basicos uso_exclusivo }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_uso_exclusivo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_uso_exclusivo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_uso_exclusivo}</span>
+						</div>
+		{END searchCtrlBlock_uso_exclusivo}
+																{BEGIN searchCtrlBlock_restingido}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_restingido}" {$filterRow_attrs_restingido}>
+			<label>{$label conf_cuadro_nacional_de_medicamentos_basicos restingido }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_restingido}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_restingido}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_restingido}</span>
+						</div>
+		{END searchCtrlBlock_restingido}
+																{BEGIN searchCtrlBlock_nivel_prescripci_n}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nivel_prescripci_n}" {$filterRow_attrs_nivel_prescripci_n}>
+			<label>{$label conf_cuadro_nacional_de_medicamentos_basicos nivel_prescripci_n }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nivel_prescripci_n}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nivel_prescripci_n}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nivel_prescripci_n}</span>
+						</div>
+		{END searchCtrlBlock_nivel_prescripci_n}
+																{BEGIN searchCtrlBlock_nivel_atenci_n_3}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nivel_atenci_n_3}" {$filterRow_attrs_nivel_atenci_n_3}>
+			<label>{$label conf_cuadro_nacional_de_medicamentos_basicos nivel_atenci_n_3 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nivel_atenci_n_3}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nivel_atenci_n_3}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nivel_atenci_n_3}</span>
+						</div>
+		{END searchCtrlBlock_nivel_atenci_n_3}
+																{BEGIN searchCtrlBlock_nivel_atenci_n_2}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nivel_atenci_n_2}" {$filterRow_attrs_nivel_atenci_n_2}>
+			<label>{$label conf_cuadro_nacional_de_medicamentos_basicos nivel_atenci_n_2 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nivel_atenci_n_2}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nivel_atenci_n_2}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nivel_atenci_n_2}</span>
+						</div>
+		{END searchCtrlBlock_nivel_atenci_n_2}
+																{BEGIN searchCtrlBlock_nivel_atenci_n_1}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nivel_atenci_n_1}" {$filterRow_attrs_nivel_atenci_n_1}>
+			<label>{$label conf_cuadro_nacional_de_medicamentos_basicos nivel_atenci_n_1 }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nivel_atenci_n_1}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nivel_atenci_n_1}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nivel_atenci_n_1}</span>
+						</div>
+		{END searchCtrlBlock_nivel_atenci_n_1}
+																{BEGIN searchCtrlBlock_id_tecnico}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id_tecnico}" {$filterRow_attrs_id_tecnico}>
+			<label>{$label conf_cuadro_nacional_de_medicamentos_basicos id_tecnico }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id_tecnico}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id_tecnico}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id_tecnico}</span>
+						</div>
+		{END searchCtrlBlock_id_tecnico}
+																{BEGIN searchCtrlBlock_id_cnmb}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id_cnmb}" {$filterRow_attrs_id_cnmb}>
+			<label>{$label conf_cuadro_nacional_de_medicamentos_basicos id_cnmb }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id_cnmb}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id_cnmb}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id_cnmb}</span>
+						</div>
+		{END searchCtrlBlock_id_cnmb}
+																{BEGIN searchCtrlBlock_forma_farmac_utica}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_forma_farmac_utica}" {$filterRow_attrs_forma_farmac_utica}>
+			<label>{$label conf_cuadro_nacional_de_medicamentos_basicos forma_farmac_utica }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_forma_farmac_utica}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_forma_farmac_utica}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_forma_farmac_utica}</span>
+						</div>
+		{END searchCtrlBlock_forma_farmac_utica}
+																{BEGIN searchCtrlBlock_descripci_n}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_descripci_n}" {$filterRow_attrs_descripci_n}>
+			<label>{$label conf_cuadro_nacional_de_medicamentos_basicos descripci_n }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_descripci_n}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_descripci_n}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_descripci_n}</span>
+						</div>
+		{END searchCtrlBlock_descripci_n}
+																{BEGIN searchCtrlBlock_c_digo}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_c_digo}" {$filterRow_attrs_c_digo}>
+			<label>{$label conf_cuadro_nacional_de_medicamentos_basicos c_digo }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_c_digo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_c_digo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_c_digo}</span>
+						</div>
+		{END searchCtrlBlock_c_digo}
+																{BEGIN searchCtrlBlock_concentraci_n}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_concentraci_n}" {$filterRow_attrs_concentraci_n}>
+			<label>{$label conf_cuadro_nacional_de_medicamentos_basicos concentraci_n }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_concentraci_n}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_concentraci_n}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_concentraci_n}</span>
+						</div>
+		{END searchCtrlBlock_concentraci_n}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Buscar</button>
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>Mostrar todo</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
+    {END left_block}
+</div>				</div>	
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div  class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Collapse" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="breadcrumb" {$item_breadcrumb} data-topcell-item-type="breadcrumb" >
+				{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Mostrar todo">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-cog"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN exportselected_link}
+	<li data-itemtype="export_selected" data-itemid="export_selected" {$item_export_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}  title="" >
+				
+		Exportar seleccionados		
+		</a>
+	</li>
+{END exportselected_link}
+							{BEGIN deleteselected_link}
+	<li data-itemtype="delete_selected" data-itemid="delete_selected" {$item_delete_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}  title="" >
+				
+		Borrar articulos seleccionados		
+		</a>
+	</li>
+{END deleteselected_link}
+							<li role="separator" class="divider"></li>								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="conf_cuadro_nacional_de_medicamentos_basicos_search.php{$stateLink_full}" {$advsearchlink_attrs}  title="" >
+				
+		Búsqueda avanzada		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Mostrar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Ocultar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							<li role="separator" class="divider"></li>							{BEGIN export_link}
+	<li data-itemtype="export" data-itemid="export" {$item_export} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportlink_attrs}  title="" >
+				
+		Exportar resultados		
+		</a>
+	</li>
+{END export_link}
+							<li role="separator" class="divider"></li>							{BEGIN import_link}
+	<li data-itemtype="import" data-itemid="import" {$item_import} data-pageid="{$pageid}" data-small >
+				<a  {$importlink_attrs} href="conf_cuadro_nacional_de_medicamentos_basicos_import.php{$stateLink_full}"  title="" >
+				
+		Importar		
+		</a>
+	</li>
+{END import_link}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Conectar			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-user"></span>
+						{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Desconectarse		
+		</a>
+	</li>
+{END logoutbutton}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>	
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	</div>		
+{END top_block}
+						</div>
+					<div class="r-above">
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class="			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN add_link}
+<span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$addlink_attrs} href="conf_cuadro_nacional_de_medicamentos_basicos_add.php{$stateLink_full}" >
+							Añadir nuevo			</a>
+</span>
+{END add_link}
+	 
+		{BEGIN deleteselected_link}
+<span data-itemtype="delete" data-itemid="delete" {$item_delete} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled >
+							Borrar artículos seleccionados			</a>
+</span>
+{END deleteselected_link}
+			{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$details_found_labeldetails_found}
+</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>	 
+		{BEGIN print_friendly}
+<span id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+	<button title="Página para imprimir" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				 
+					<li class="container-fluid 
+										">
+									<div id="print_friendly_scope{$id}">
+	<div class="row">
+		<div class="col-md-4">
+			Rango:		</div>
+
+		{BEGIN print_friendly_all}
+		<div class="col-md-8">
+			<label for="printAll{$id}">
+				<input type="radio" id="printAll{$id}" data-href="conf_cuadro_nacional_de_medicamentos_basicos_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">
+									Imprimir todas las páginas							</label>
+		</div>
+		{END print_friendly_all}
+	</div>
+	<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-8">
+			<label for="printPage{$id}">
+				<input name="printScope" id="printPage{$id}" type="radio" checked data-href="conf_cuadro_nacional_de_medicamentos_basicos_print.php?{$crosstable_attrs}">
+				Imprimir esta página			</label>
+		</div>
+	</div>
+	
+		<div class="row">
+		<div class="col-md-4">
+			&nbsp;
+		</div>
+		<div class="col-md-8">
+			<label style="color: gray;" for="printSelection{$id}">
+			<input name="printScope" disabled="disabled" id="printSelection{$id}" type="radio">
+			Imprimir la selección			</label>
+		</div>
+	</div>
+	</div>				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									<div>
+	<label for="printPerPage{$id}">
+					Resultados por página							
+	</label>
+	<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+					 text-center 					">
+									<span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" id="print_friendly_button{$id}" >
+							Imprimir			</a>
+</span>
+				 
+					</li>
+															</ul>
+</span>
+{END print_friendly}
+		</div>					</div>
+	</div>		
+{END above-grid_block}
+						</div>
+					<div class="r-grid">
+										{BEGIN grid_block}
+{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}	<style>
+@media screen and (max-width: 767px) {
+		[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="id_cnmb"]:before {
+		content: "{$label conf_cuadro_nacional_de_medicamentos_basicos id_cnmb}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="c_digo"]:before {
+		content: "{$label conf_cuadro_nacional_de_medicamentos_basicos c_digo}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="descripci_n"]:before {
+		content: "{$label conf_cuadro_nacional_de_medicamentos_basicos descripci_n}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="forma_farmac_utica"]:before {
+		content: "{$label conf_cuadro_nacional_de_medicamentos_basicos forma_farmac_utica}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="concentraci_n"]:before {
+		content: "{$label conf_cuadro_nacional_de_medicamentos_basicos concentraci_n}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="nivel_prescripci_n"]:before {
+		content: "{$label conf_cuadro_nacional_de_medicamentos_basicos nivel_prescripci_n}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="nivel_atenci_n_1"]:before {
+		content: "{$label conf_cuadro_nacional_de_medicamentos_basicos nivel_atenci_n_1}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="nivel_atenci_n_2"]:before {
+		content: "{$label conf_cuadro_nacional_de_medicamentos_basicos nivel_atenci_n_2}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="nivel_atenci_n_3"]:before {
+		content: "{$label conf_cuadro_nacional_de_medicamentos_basicos nivel_atenci_n_3}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="v_a_administrativa"]:before {
+		content: "{$label conf_cuadro_nacional_de_medicamentos_basicos v_a_administrativa}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="uso_exclusivo"]:before {
+		content: "{$label conf_cuadro_nacional_de_medicamentos_basicos uso_exclusivo}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="valor_unitario"]:before {
+		content: "{$label conf_cuadro_nacional_de_medicamentos_basicos valor_unitario}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="restingido"]:before {
+		content: "{$label conf_cuadro_nacional_de_medicamentos_basicos restingido}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="autorizados"]:before {
+		content: "{$label conf_cuadro_nacional_de_medicamentos_basicos autorizados}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="id_tecnico"]:before {
+		content: "{$label conf_cuadro_nacional_de_medicamentos_basicos id_tecnico}";
+	}
+	}
+</style>
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  r-flexgrid rnr-b-grid rnr-gridtable" 
+	cellpadding="0" 
+	data-body-height="1"
+>
+						<thead>
+			{BEGIN grid_header}
+					
+		 
+						<tr {$rowattrs} {$row_grid_0} class="{$rowclass} 
+									{$gridHeader_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_headcell_icons}
+	<th
+	
+	{$cell_grid_headcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="conf_cuadro_nacional_de_medicamentos_basicos_list"		data-control-cell
+	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_icons}
+				 
+					{BEGIN cellblock_grid_headcell_checkbox}
+	<th
+	
+	{$cell_grid_headcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="conf_cuadro_nacional_de_medicamentos_basicos_list"	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox_head" data-itemid="grid_checkbox_head" {$item_grid_checkbox_head} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkboxheader_attrs}>
+</span>
+{END checkbox_column}
+	
+	</th>
+	{END cellblock_grid_headcell_checkbox}
+				 
+					{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_cnmb_class}
+			"
+
+			data-field="id_cnmb"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_cnmb_fieldheadercolumn}
+	{BEGIN id_cnmb_fieldheader}
+	<SPAN {$id_cnmb_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_cnmb">
+	{$label conf_cuadro_nacional_de_medicamentos_basicos id_cnmb }	{$arrow_icon_id_cnmb}
+	</SPAN>
+	{END id_cnmb_fieldheader}
+{END id_cnmb_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+				 
+					{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$c_digo_class}
+			"
+
+			data-field="c_digo"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN c_digo_fieldheadercolumn}
+	{BEGIN c_digo_fieldheader}
+	<SPAN {$c_digo_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="c_digo">
+	{$label conf_cuadro_nacional_de_medicamentos_basicos c_digo }	{$arrow_icon_c_digo}
+	</SPAN>
+	{END c_digo_fieldheader}
+{END c_digo_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$descripci_n_class}
+			"
+
+			data-field="descripci_n"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN descripci_n_fieldheadercolumn}
+	{BEGIN descripci_n_fieldheader}
+	<SPAN {$descripci_n_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="descripci_n">
+	{$label conf_cuadro_nacional_de_medicamentos_basicos descripci_n }	{$arrow_icon_descripci_n}
+	</SPAN>
+	{END descripci_n_fieldheader}
+{END descripci_n_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+				 
+					{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$forma_farmac_utica_class}
+			"
+
+			data-field="forma_farmac_utica"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN forma_farmac_utica_fieldheadercolumn}
+	{BEGIN forma_farmac_utica_fieldheader}
+	<SPAN {$forma_farmac_utica_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="forma_farmac_utica">
+	{$label conf_cuadro_nacional_de_medicamentos_basicos forma_farmac_utica }	{$arrow_icon_forma_farmac_utica}
+	</SPAN>
+	{END forma_farmac_utica_fieldheader}
+{END forma_farmac_utica_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+				 
+					{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$concentraci_n_class}
+			"
+
+			data-field="concentraci_n"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN concentraci_n_fieldheadercolumn}
+	{BEGIN concentraci_n_fieldheader}
+	<SPAN {$concentraci_n_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="concentraci_n">
+	{$label conf_cuadro_nacional_de_medicamentos_basicos concentraci_n }	{$arrow_icon_concentraci_n}
+	</SPAN>
+	{END concentraci_n_fieldheader}
+{END concentraci_n_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+				 
+					{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nivel_prescripci_n_class}
+			"
+
+			data-field="nivel_prescripci_n"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nivel_prescripci_n_fieldheadercolumn}
+	{BEGIN nivel_prescripci_n_fieldheader}
+	<SPAN {$nivel_prescripci_n_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nivel_prescripci_n">
+	{$label conf_cuadro_nacional_de_medicamentos_basicos nivel_prescripci_n }	{$arrow_icon_nivel_prescripci_n}
+	</SPAN>
+	{END nivel_prescripci_n_fieldheader}
+{END nivel_prescripci_n_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+				 
+					{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nivel_atenci_n_1_class}
+			"
+
+			data-field="nivel_atenci_n_1"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nivel_atenci_n_1_fieldheadercolumn}
+	{BEGIN nivel_atenci_n_1_fieldheader}
+	<SPAN {$nivel_atenci_n_1_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nivel_atenci_n_1">
+	{$label conf_cuadro_nacional_de_medicamentos_basicos nivel_atenci_n_1 }	{$arrow_icon_nivel_atenci_n_1}
+	</SPAN>
+	{END nivel_atenci_n_1_fieldheader}
+{END nivel_atenci_n_1_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+				 
+					{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nivel_atenci_n_2_class}
+			"
+
+			data-field="nivel_atenci_n_2"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nivel_atenci_n_2_fieldheadercolumn}
+	{BEGIN nivel_atenci_n_2_fieldheader}
+	<SPAN {$nivel_atenci_n_2_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nivel_atenci_n_2">
+	{$label conf_cuadro_nacional_de_medicamentos_basicos nivel_atenci_n_2 }	{$arrow_icon_nivel_atenci_n_2}
+	</SPAN>
+	{END nivel_atenci_n_2_fieldheader}
+{END nivel_atenci_n_2_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+				 
+					{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nivel_atenci_n_3_class}
+			"
+
+			data-field="nivel_atenci_n_3"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nivel_atenci_n_3_fieldheadercolumn}
+	{BEGIN nivel_atenci_n_3_fieldheader}
+	<SPAN {$nivel_atenci_n_3_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nivel_atenci_n_3">
+	{$label conf_cuadro_nacional_de_medicamentos_basicos nivel_atenci_n_3 }	{$arrow_icon_nivel_atenci_n_3}
+	</SPAN>
+	{END nivel_atenci_n_3_fieldheader}
+{END nivel_atenci_n_3_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+				 
+					{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$v_a_administrativa_class}
+			"
+
+			data-field="v_a_administrativa"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN v_a_administrativa_fieldheadercolumn}
+	{BEGIN v_a_administrativa_fieldheader}
+	<SPAN {$v_a_administrativa_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="v_a_administrativa">
+	{$label conf_cuadro_nacional_de_medicamentos_basicos v_a_administrativa }	{$arrow_icon_v_a_administrativa}
+	</SPAN>
+	{END v_a_administrativa_fieldheader}
+{END v_a_administrativa_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
+				 
+					{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$uso_exclusivo_class}
+			"
+
+			data-field="uso_exclusivo"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN uso_exclusivo_fieldheadercolumn}
+	{BEGIN uso_exclusivo_fieldheader}
+	<SPAN {$uso_exclusivo_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="uso_exclusivo">
+	{$label conf_cuadro_nacional_de_medicamentos_basicos uso_exclusivo }	{$arrow_icon_uso_exclusivo}
+	</SPAN>
+	{END uso_exclusivo_fieldheader}
+{END uso_exclusivo_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+				 
+					{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$valor_unitario_class}
+			"
+
+			data-field="valor_unitario"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN valor_unitario_fieldheadercolumn}
+	{BEGIN valor_unitario_fieldheader}
+	<SPAN {$valor_unitario_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="valor_unitario">
+	{$label conf_cuadro_nacional_de_medicamentos_basicos valor_unitario }	{$arrow_icon_valor_unitario}
+	</SPAN>
+	{END valor_unitario_fieldheader}
+{END valor_unitario_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
+				 
+					{BEGIN cellblock_grid_headcell_field12}
+	<th
+	
+	{$cell_grid_headcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$restingido_class}
+			"
+
+			data-field="restingido"
+	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN restingido_fieldheadercolumn}
+	{BEGIN restingido_fieldheader}
+	<SPAN {$restingido_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="restingido">
+	{$label conf_cuadro_nacional_de_medicamentos_basicos restingido }	{$arrow_icon_restingido}
+	</SPAN>
+	{END restingido_fieldheader}
+{END restingido_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field12}
+				 
+					{BEGIN cellblock_grid_headcell_field13}
+	<th
+	
+	{$cell_grid_headcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$autorizados_class}
+			"
+
+			data-field="autorizados"
+	
+	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN autorizados_fieldheadercolumn}
+	{BEGIN autorizados_fieldheader}
+	<SPAN {$autorizados_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="autorizados">
+	{$label conf_cuadro_nacional_de_medicamentos_basicos autorizados }	{$arrow_icon_autorizados}
+	</SPAN>
+	{END autorizados_fieldheader}
+{END autorizados_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field13}
+				 
+					{BEGIN cellblock_grid_headcell_field14}
+	<th
+	
+	{$cell_grid_headcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_tecnico_class}
+			"
+
+			data-field="id_tecnico"
+	
+	data-cellId="grid_headcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_tecnico_fieldheadercolumn}
+	{BEGIN id_tecnico_fieldheader}
+	<SPAN {$id_tecnico_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_tecnico">
+	{$label conf_cuadro_nacional_de_medicamentos_basicos id_tecnico }	{$arrow_icon_id_tecnico}
+	</SPAN>
+	{END id_tecnico_fieldheader}
+{END id_tecnico_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field14}
+							</tr>
+					 
+					 
+					
+					{END grid_header}
+			</thead>
+															<tbody>
+					{BEGIN grid_row}
+									
+		 
+					 
+						<tr {$rowattrs} {$row_grid_1} class="{$rowclass} 
+								
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_cell_icons}
+	<td
+	
+	{$cell_grid_cell_icons}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="conf_cuadro_nacional_de_medicamentos_basicos_list"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN edit_column}
+{BEGIN edit_link}
+<span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Editar" class="btn-link   
+	 glyphicon glyphicon-pencil" href="conf_cuadro_nacional_de_medicamentos_basicos_edit.php?{$editlink}" {$editlink_attrs} title="Editar" >		
+				
+								</a>
+</span>
+{END edit_link}
+{END edit_column}
+	 
+		{BEGIN view_column}
+{BEGIN view_link}
+<span data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Ver registro" class="btn-link   
+	 glyphicon glyphicon-search" href="conf_cuadro_nacional_de_medicamentos_basicos_view.php?{$editlink}" {$viewlink_attrs} title="Ver" >		
+				
+								</a>
+</span>
+{END view_link}
+{END view_column}
+	
+	</td>
+	{END cellblock_grid_cell_icons}
+				 
+					{BEGIN cellblock_grid_cell_checkbox}
+	<td
+	
+	{$cell_grid_cell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"		data-control-cell
+	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox" data-itemid="grid_checkbox" {$item_grid_checkbox} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkbox_attrs}>
+</span>	
+{END checkbox_column}
+	
+	</td>
+	{END cellblock_grid_cell_checkbox}
+				 
+					{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_cnmb_class}
+			"
+
+			data-field="id_cnmb"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_cnmb_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_cnmb" data-default-width >
+{$id_cnmb_value}
+</span>
+{END id_cnmb_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$c_digo_class}
+			"
+
+			data-field="c_digo"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN c_digo_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="c_digo" data-default-width >
+{$c_digo_value}
+</span>
+{END c_digo_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$descripci_n_class}
+			"
+
+			data-field="descripci_n"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN descripci_n_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="descripci_n" data-default-width >
+{$descripci_n_value}
+</span>
+{END descripci_n_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+				 
+					{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$forma_farmac_utica_class}
+			"
+
+			data-field="forma_farmac_utica"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN forma_farmac_utica_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="forma_farmac_utica" data-default-width >
+{$forma_farmac_utica_value}
+</span>
+{END forma_farmac_utica_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+				 
+					{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$concentraci_n_class}
+			"
+
+			data-field="concentraci_n"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN concentraci_n_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="concentraci_n" data-default-width >
+{$concentraci_n_value}
+</span>
+{END concentraci_n_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+				 
+					{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nivel_prescripci_n_class}
+			"
+
+			data-field="nivel_prescripci_n"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nivel_prescripci_n_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nivel_prescripci_n" data-default-width >
+{$nivel_prescripci_n_value}
+</span>
+{END nivel_prescripci_n_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+				 
+					{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nivel_atenci_n_1_class}
+			"
+
+			data-field="nivel_atenci_n_1"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nivel_atenci_n_1_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nivel_atenci_n_1" data-default-width >
+{$nivel_atenci_n_1_value}
+</span>
+{END nivel_atenci_n_1_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+				 
+					{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nivel_atenci_n_2_class}
+			"
+
+			data-field="nivel_atenci_n_2"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nivel_atenci_n_2_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nivel_atenci_n_2" data-default-width >
+{$nivel_atenci_n_2_value}
+</span>
+{END nivel_atenci_n_2_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+				 
+					{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nivel_atenci_n_3_class}
+			"
+
+			data-field="nivel_atenci_n_3"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nivel_atenci_n_3_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nivel_atenci_n_3" data-default-width >
+{$nivel_atenci_n_3_value}
+</span>
+{END nivel_atenci_n_3_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+				 
+					{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$v_a_administrativa_class}
+			"
+
+			data-field="v_a_administrativa"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN v_a_administrativa_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="v_a_administrativa" data-default-width >
+{$v_a_administrativa_value}
+</span>
+{END v_a_administrativa_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+				 
+					{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$uso_exclusivo_class}
+			"
+
+			data-field="uso_exclusivo"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN uso_exclusivo_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="uso_exclusivo" data-default-width >
+{$uso_exclusivo_value}
+</span>
+{END uso_exclusivo_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+				 
+					{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$valor_unitario_class}
+			"
+
+			data-field="valor_unitario"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN valor_unitario_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="valor_unitario" data-default-width >
+{$valor_unitario_value}
+</span>
+{END valor_unitario_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+				 
+					{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$restingido_class}
+			"
+
+			data-field="restingido"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN restingido_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="restingido" data-default-width >
+{$restingido_value}
+</span>
+{END restingido_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+				 
+					{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$autorizados_class}
+			"
+
+			data-field="autorizados"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN autorizados_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="autorizados" data-default-width >
+{$autorizados_value}
+</span>
+{END autorizados_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+				 
+					{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_tecnico_class}
+			"
+
+			data-field="id_tecnico"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_tecnico_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_tecnico" data-default-width >
+{$id_tecnico_value}
+</span>
+{END id_tecnico_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field14}
+							</tr>
+					 
+					
+											{END grid_row}
+					</tbody>
+													<tfoot>
+					
+		 
+					 
+					 
+						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+									{$gridFooter_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_footcell_icons}
+	<td
+	
+	{$cell_grid_footcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_icons}
+				 
+					{BEGIN cellblock_grid_footcell_checkbox}
+	<td
+	
+	{$cell_grid_footcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_checkbox}
+				 
+					{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="conf_cuadro_nacional_de_medicamentos_basicos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+				 
+					{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="conf_cuadro_nacional_de_medicamentos_basicos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="conf_cuadro_nacional_de_medicamentos_basicos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+				 
+					{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="conf_cuadro_nacional_de_medicamentos_basicos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+				 
+					{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="conf_cuadro_nacional_de_medicamentos_basicos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+				 
+					{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="conf_cuadro_nacional_de_medicamentos_basicos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+				 
+					{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="conf_cuadro_nacional_de_medicamentos_basicos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+				 
+					{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="conf_cuadro_nacional_de_medicamentos_basicos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+				 
+					{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="conf_cuadro_nacional_de_medicamentos_basicos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+				 
+					{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="conf_cuadro_nacional_de_medicamentos_basicos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
+				 
+					{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="conf_cuadro_nacional_de_medicamentos_basicos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+				 
+					{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="conf_cuadro_nacional_de_medicamentos_basicos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
+				 
+					{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="conf_cuadro_nacional_de_medicamentos_basicos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
+				 
+					{BEGIN cellblock_grid_footcell_field13}
+	<td
+	
+	{$cell_grid_footcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="conf_cuadro_nacional_de_medicamentos_basicos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field13}
+				 
+					{BEGIN cellblock_grid_footcell_field14}
+	<td
+	
+	{$cell_grid_footcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="conf_cuadro_nacional_de_medicamentos_basicos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field14}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+						</div>
+					<div class="r-below">
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+						</div>
+					{$footer}
+				</div>	
+			</div>	
+		</div>
+	{END body}
+	</body>
+</html>

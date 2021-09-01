@@ -1,0 +1,516 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel conf_cuadro_nacional_de_medicamentos_basicos search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_cnmb_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_cnmb}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id_cnmb" 
+	
+	data-signal-error-for="id_cnmb{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="id_cnmb" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_cnmb}">
+		{$label conf_cuadro_nacional_de_medicamentos_basicos id_cnmb }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_cnmb}
+	</div>
+	<div class="r-search-field">
+		{$id_cnmb_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_cnmb_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_cnmb_fieldblock}
+											
+{BEGIN c_digo_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_c_digo}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="código" 
+	
+	data-signal-error-for="c_digo{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="c_digo" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_c_digo}">
+		{$label conf_cuadro_nacional_de_medicamentos_basicos c_digo }	</label>
+	<div class="r-search-option">
+		{$searchtype_c_digo}
+	</div>
+	<div class="r-search-field">
+		{$c_digo_editcontrol}	</div>
+	<div class="r-search-field">
+		{$c_digo_editcontrol1}
+	</div>
+	
+</div>
+
+{END c_digo_fieldblock}
+											
+{BEGIN descripci_n_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_descripci_n}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="descripción" 
+	
+	data-signal-error-for="descripci_n{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="descripci_n" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_descripci_n}">
+		{$label conf_cuadro_nacional_de_medicamentos_basicos descripci_n }	</label>
+	<div class="r-search-option">
+		{$searchtype_descripci_n}
+	</div>
+	<div class="r-search-field">
+		{$descripci_n_editcontrol}	</div>
+	<div class="r-search-field">
+		{$descripci_n_editcontrol1}
+	</div>
+	
+</div>
+
+{END descripci_n_fieldblock}
+											
+{BEGIN forma_farmac_utica_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_forma_farmac_utica}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="forma_farmacéutica" 
+	
+	data-signal-error-for="forma_farmac_utica{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="forma_farmac_utica" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_forma_farmac_utica}">
+		{$label conf_cuadro_nacional_de_medicamentos_basicos forma_farmac_utica }	</label>
+	<div class="r-search-option">
+		{$searchtype_forma_farmac_utica}
+	</div>
+	<div class="r-search-field">
+		{$forma_farmac_utica_editcontrol}	</div>
+	<div class="r-search-field">
+		{$forma_farmac_utica_editcontrol1}
+	</div>
+	
+</div>
+
+{END forma_farmac_utica_fieldblock}
+											
+{BEGIN concentraci_n_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_concentraci_n}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="concentración" 
+	
+	data-signal-error-for="concentraci_n{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="concentraci_n" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_concentraci_n}">
+		{$label conf_cuadro_nacional_de_medicamentos_basicos concentraci_n }	</label>
+	<div class="r-search-option">
+		{$searchtype_concentraci_n}
+	</div>
+	<div class="r-search-field">
+		{$concentraci_n_editcontrol}	</div>
+	<div class="r-search-field">
+		{$concentraci_n_editcontrol1}
+	</div>
+	
+</div>
+
+{END concentraci_n_fieldblock}
+											
+{BEGIN nivel_prescripci_n_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nivel_prescripci_n}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="nivel_prescripción" 
+	
+	data-signal-error-for="nivel_prescripci_n{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="nivel_prescripci_n" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_nivel_prescripci_n}">
+		{$label conf_cuadro_nacional_de_medicamentos_basicos nivel_prescripci_n }	</label>
+	<div class="r-search-option">
+		{$searchtype_nivel_prescripci_n}
+	</div>
+	<div class="r-search-field">
+		{$nivel_prescripci_n_editcontrol}	</div>
+	<div class="r-search-field">
+		{$nivel_prescripci_n_editcontrol1}
+	</div>
+	
+</div>
+
+{END nivel_prescripci_n_fieldblock}
+											
+{BEGIN nivel_atenci_n_1_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nivel_atenci_n_1}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="nivel_atención_1" 
+	
+	data-signal-error-for="nivel_atenci_n_1{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="nivel_atenci_n_1" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_nivel_atenci_n_1}">
+		{$label conf_cuadro_nacional_de_medicamentos_basicos nivel_atenci_n_1 }	</label>
+	<div class="r-search-option">
+		{$searchtype_nivel_atenci_n_1}
+	</div>
+	<div class="r-search-field">
+		{$nivel_atenci_n_1_editcontrol}	</div>
+	<div class="r-search-field">
+		{$nivel_atenci_n_1_editcontrol1}
+	</div>
+	
+</div>
+
+{END nivel_atenci_n_1_fieldblock}
+											
+{BEGIN nivel_atenci_n_2_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nivel_atenci_n_2}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="nivel_atención_2" 
+	
+	data-signal-error-for="nivel_atenci_n_2{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="nivel_atenci_n_2" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_nivel_atenci_n_2}">
+		{$label conf_cuadro_nacional_de_medicamentos_basicos nivel_atenci_n_2 }	</label>
+	<div class="r-search-option">
+		{$searchtype_nivel_atenci_n_2}
+	</div>
+	<div class="r-search-field">
+		{$nivel_atenci_n_2_editcontrol}	</div>
+	<div class="r-search-field">
+		{$nivel_atenci_n_2_editcontrol1}
+	</div>
+	
+</div>
+
+{END nivel_atenci_n_2_fieldblock}
+											
+{BEGIN nivel_atenci_n_3_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nivel_atenci_n_3}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="nivel_atención_3" 
+	
+	data-signal-error-for="nivel_atenci_n_3{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="nivel_atenci_n_3" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_nivel_atenci_n_3}">
+		{$label conf_cuadro_nacional_de_medicamentos_basicos nivel_atenci_n_3 }	</label>
+	<div class="r-search-option">
+		{$searchtype_nivel_atenci_n_3}
+	</div>
+	<div class="r-search-field">
+		{$nivel_atenci_n_3_editcontrol}	</div>
+	<div class="r-search-field">
+		{$nivel_atenci_n_3_editcontrol1}
+	</div>
+	
+</div>
+
+{END nivel_atenci_n_3_fieldblock}
+											
+{BEGIN v_a_administrativa_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_v_a_administrativa}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="vía_administrativa" 
+	
+	data-signal-error-for="v_a_administrativa{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="v_a_administrativa" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_v_a_administrativa}">
+		{$label conf_cuadro_nacional_de_medicamentos_basicos v_a_administrativa }	</label>
+	<div class="r-search-option">
+		{$searchtype_v_a_administrativa}
+	</div>
+	<div class="r-search-field">
+		{$v_a_administrativa_editcontrol}	</div>
+	<div class="r-search-field">
+		{$v_a_administrativa_editcontrol1}
+	</div>
+	
+</div>
+
+{END v_a_administrativa_fieldblock}
+											
+{BEGIN uso_exclusivo_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_uso_exclusivo}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="uso_exclusivo" 
+	
+	data-signal-error-for="uso_exclusivo{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="uso_exclusivo" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_uso_exclusivo}">
+		{$label conf_cuadro_nacional_de_medicamentos_basicos uso_exclusivo }	</label>
+	<div class="r-search-option">
+		{$searchtype_uso_exclusivo}
+	</div>
+	<div class="r-search-field">
+		{$uso_exclusivo_editcontrol}	</div>
+	<div class="r-search-field">
+		{$uso_exclusivo_editcontrol1}
+	</div>
+	
+</div>
+
+{END uso_exclusivo_fieldblock}
+											
+{BEGIN valor_unitario_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_valor_unitario}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="valor_unitario" 
+	
+	data-signal-error-for="valor_unitario{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="valor_unitario" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_valor_unitario}">
+		{$label conf_cuadro_nacional_de_medicamentos_basicos valor_unitario }	</label>
+	<div class="r-search-option">
+		{$searchtype_valor_unitario}
+	</div>
+	<div class="r-search-field">
+		{$valor_unitario_editcontrol}	</div>
+	<div class="r-search-field">
+		{$valor_unitario_editcontrol1}
+	</div>
+	
+</div>
+
+{END valor_unitario_fieldblock}
+											
+{BEGIN restingido_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_restingido}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="restingido" 
+	
+	data-signal-error-for="restingido{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="restingido" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_restingido}">
+		{$label conf_cuadro_nacional_de_medicamentos_basicos restingido }	</label>
+	<div class="r-search-option">
+		{$searchtype_restingido}
+	</div>
+	<div class="r-search-field">
+		{$restingido_editcontrol}	</div>
+	<div class="r-search-field">
+		{$restingido_editcontrol1}
+	</div>
+	
+</div>
+
+{END restingido_fieldblock}
+											
+{BEGIN autorizados_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_autorizados}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="autorizados" 
+	
+	data-signal-error-for="autorizados{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="autorizados" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_autorizados}">
+		{$label conf_cuadro_nacional_de_medicamentos_basicos autorizados }	</label>
+	<div class="r-search-option">
+		{$searchtype_autorizados}
+	</div>
+	<div class="r-search-field">
+		{$autorizados_editcontrol}	</div>
+	<div class="r-search-field">
+		{$autorizados_editcontrol1}
+	</div>
+	
+</div>
+
+{END autorizados_fieldblock}
+											
+{BEGIN id_tecnico_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_tecnico}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id_tecnico" 
+	
+	data-signal-error-for="id_tecnico{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="id_tecnico" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_tecnico}">
+		{$label conf_cuadro_nacional_de_medicamentos_basicos id_tecnico }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_tecnico}
+	</div>
+	<div class="r-search-field">
+		{$id_tecnico_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_tecnico_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_tecnico_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
