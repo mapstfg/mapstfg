@@ -1,0 +1,441 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel stockmed search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN CODIGO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CODIGO}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="CODIGO" 
+	
+	data-signal-error-for="CODIGO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="CODIGO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CODIGO}">
+		{$label stockmed CODIGO }	</label>
+	<div class="r-search-option">
+		{$searchtype_CODIGO}
+	</div>
+	<div class="r-search-field">
+		{$CODIGO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CODIGO_editcontrol1}
+	</div>
+	
+</div>
+
+{END CODIGO_fieldblock}
+											
+{BEGIN NOMBRE_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_NOMBRE}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="NOMBRE" 
+	
+	data-signal-error-for="NOMBRE{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="NOMBRE" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_NOMBRE}">
+		{$label stockmed NOMBRE }	</label>
+	<div class="r-search-option">
+		{$searchtype_NOMBRE}
+	</div>
+	<div class="r-search-field">
+		{$NOMBRE_editcontrol}	</div>
+	<div class="r-search-field">
+		{$NOMBRE_editcontrol1}
+	</div>
+	
+</div>
+
+{END NOMBRE_fieldblock}
+											
+{BEGIN PRESENTACI_N_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_PRESENTACI_N}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="PRESENTACIÓN" 
+	
+	data-signal-error-for="PRESENTACI_N{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="PRESENTACI_N" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_PRESENTACI_N}">
+		{$label stockmed PRESENTACI_N }	</label>
+	<div class="r-search-option">
+		{$searchtype_PRESENTACI_N}
+	</div>
+	<div class="r-search-field">
+		{$PRESENTACI_N_editcontrol}	</div>
+	<div class="r-search-field">
+		{$PRESENTACI_N_editcontrol1}
+	</div>
+	
+</div>
+
+{END PRESENTACI_N_fieldblock}
+											
+{BEGIN SINONIMO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SINONIMO}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="SINONIMO" 
+	
+	data-signal-error-for="SINONIMO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="SINONIMO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_SINONIMO}">
+		{$label stockmed SINONIMO }	</label>
+	<div class="r-search-option">
+		{$searchtype_SINONIMO}
+	</div>
+	<div class="r-search-field">
+		{$SINONIMO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$SINONIMO_editcontrol1}
+	</div>
+	
+</div>
+
+{END SINONIMO_fieldblock}
+											
+{BEGIN LOTE_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_LOTE}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="LOTE" 
+	
+	data-signal-error-for="LOTE{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="LOTE" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_LOTE}">
+		{$label stockmed LOTE }	</label>
+	<div class="r-search-option">
+		{$searchtype_LOTE}
+	</div>
+	<div class="r-search-field">
+		{$LOTE_editcontrol}	</div>
+	<div class="r-search-field">
+		{$LOTE_editcontrol1}
+	</div>
+	
+</div>
+
+{END LOTE_fieldblock}
+											
+{BEGIN PROVEEDOR_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_PROVEEDOR}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="PROVEEDOR" 
+	
+	data-signal-error-for="PROVEEDOR{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="PROVEEDOR" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_PROVEEDOR}">
+		{$label stockmed PROVEEDOR }	</label>
+	<div class="r-search-option">
+		{$searchtype_PROVEEDOR}
+	</div>
+	<div class="r-search-field">
+		{$PROVEEDOR_editcontrol}	</div>
+	<div class="r-search-field">
+		{$PROVEEDOR_editcontrol1}
+	</div>
+	
+</div>
+
+{END PROVEEDOR_fieldblock}
+											
+{BEGIN REGISTRO_SANITARIO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_REGISTRO_SANITARIO}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="REGISTRO SANITARIO" 
+	
+	data-signal-error-for="REGISTRO_SANITARIO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="REGISTRO_SANITARIO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_REGISTRO_SANITARIO}">
+		{$label stockmed REGISTRO_SANITARIO }	</label>
+	<div class="r-search-option">
+		{$searchtype_REGISTRO_SANITARIO}
+	</div>
+	<div class="r-search-field">
+		{$REGISTRO_SANITARIO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$REGISTRO_SANITARIO_editcontrol1}
+	</div>
+	
+</div>
+
+{END REGISTRO_SANITARIO_fieldblock}
+											
+{BEGIN FECHA_ELABORACION_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FECHA_ELABORACION}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="FECHA ELABORACION" 
+	
+	data-signal-error-for="FECHA_ELABORACION{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="FECHA_ELABORACION" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_FECHA_ELABORACION}">
+		{$label stockmed FECHA_ELABORACION }	</label>
+	<div class="r-search-option">
+		{$searchtype_FECHA_ELABORACION}
+	</div>
+	<div class="r-search-field">
+		{$FECHA_ELABORACION_editcontrol}	</div>
+	<div class="r-search-field">
+		{$FECHA_ELABORACION_editcontrol1}
+	</div>
+	
+</div>
+
+{END FECHA_ELABORACION_fieldblock}
+											
+{BEGIN FECHA_CADUCIDAD_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FECHA_CADUCIDAD}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="FECHA CADUCIDAD" 
+	
+	data-signal-error-for="FECHA_CADUCIDAD{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="FECHA_CADUCIDAD" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_FECHA_CADUCIDAD}">
+		{$label stockmed FECHA_CADUCIDAD }	</label>
+	<div class="r-search-option">
+		{$searchtype_FECHA_CADUCIDAD}
+	</div>
+	<div class="r-search-field">
+		{$FECHA_CADUCIDAD_editcontrol}	</div>
+	<div class="r-search-field">
+		{$FECHA_CADUCIDAD_editcontrol1}
+	</div>
+	
+</div>
+
+{END FECHA_CADUCIDAD_fieldblock}
+											
+{BEGIN STOCK_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_STOCK}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="STOCK" 
+	
+	data-signal-error-for="STOCK{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="STOCK" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_STOCK}">
+		{$label stockmed STOCK }	</label>
+	<div class="r-search-option">
+		{$searchtype_STOCK}
+	</div>
+	<div class="r-search-field">
+		{$STOCK_editcontrol}	</div>
+	<div class="r-search-field">
+		{$STOCK_editcontrol1}
+	</div>
+	
+</div>
+
+{END STOCK_fieldblock}
+											
+{BEGIN PRECIO_UNITARIO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_PRECIO_UNITARIO}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="PRECIO_UNITARIO" 
+	
+	data-signal-error-for="PRECIO_UNITARIO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="PRECIO_UNITARIO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_PRECIO_UNITARIO}">
+		{$label stockmed PRECIO_UNITARIO }	</label>
+	<div class="r-search-option">
+		{$searchtype_PRECIO_UNITARIO}
+	</div>
+	<div class="r-search-field">
+		{$PRECIO_UNITARIO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$PRECIO_UNITARIO_editcontrol1}
+	</div>
+	
+</div>
+
+{END PRECIO_UNITARIO_fieldblock}
+											
+{BEGIN VALOR_TOTAL_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_VALOR_TOTAL}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="VALOR_TOTAL" 
+	
+	data-signal-error-for="VALOR_TOTAL{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="VALOR_TOTAL" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_VALOR_TOTAL}">
+		{$label stockmed VALOR_TOTAL }	</label>
+	<div class="r-search-option">
+		{$searchtype_VALOR_TOTAL}
+	</div>
+	<div class="r-search-field">
+		{$VALOR_TOTAL_editcontrol}	</div>
+	<div class="r-search-field">
+		{$VALOR_TOTAL_editcontrol1}
+	</div>
+	
+</div>
+
+{END VALOR_TOTAL_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
