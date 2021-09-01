@@ -1,0 +1,566 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel stock_farmacia_medicamentos view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_stock_farmacia_medicamentos_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_stock_farmacia_medicamentos}  r-vertical-field" data-fieldname="id_stock_farmacia_medicamentos" data-signal-error-for="id_stock_farmacia_medicamentos{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="id_stock_farmacia_medicamentos" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_stock_farmacia_medicamentos}">
+		
+		{BEGIN id_stock_farmacia_medicamentos_label}{$label stock_farmacia_medicamentos id_stock_farmacia_medicamentos }{END id_stock_farmacia_medicamentos_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_stock_farmacia_medicamentos_value}	</div>
+
+		
+</div>
+
+
+{END id_stock_farmacia_medicamentos_fieldblock}
+											
+{BEGIN id_aem_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_aem}  r-vertical-field" data-fieldname="id_aem" data-signal-error-for="id_aem{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="id_aem" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_aem}">
+		
+		{BEGIN id_aem_label}{$label stock_farmacia_medicamentos id_aem }{END id_aem_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_aem_value}	</div>
+
+		
+</div>
+
+
+{END id_aem_fieldblock}
+											
+{BEGIN c_digo_cnmb_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_c_digo_cnmb}  r-vertical-field" data-fieldname="código_cnmb" data-signal-error-for="c_digo_cnmb{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="c_digo_cnmb" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_c_digo_cnmb}">
+		
+		{BEGIN c_digo_cnmb_label}{$label stock_farmacia_medicamentos c_digo_cnmb }{END c_digo_cnmb_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$c_digo_cnmb_value}	</div>
+
+		
+</div>
+
+
+{END c_digo_cnmb_fieldblock}
+											
+{BEGIN descripci_n_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_descripci_n}  r-vertical-field" data-fieldname="descripción" data-signal-error-for="descripci_n{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="descripci_n" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_descripci_n}">
+		
+		{BEGIN descripci_n_label}{$label stock_farmacia_medicamentos descripci_n }{END descripci_n_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$descripci_n_value}	</div>
+
+		
+</div>
+
+
+{END descripci_n_fieldblock}
+											
+{BEGIN forma_farmaceutica_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_forma_farmaceutica}  r-vertical-field" data-fieldname="forma_farmaceutica" data-signal-error-for="forma_farmaceutica{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="forma_farmaceutica" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_forma_farmaceutica}">
+		
+		{BEGIN forma_farmaceutica_label}{$label stock_farmacia_medicamentos forma_farmaceutica }{END forma_farmaceutica_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$forma_farmaceutica_value}	</div>
+
+		
+</div>
+
+
+{END forma_farmaceutica_fieldblock}
+											
+{BEGIN concentraci_n_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_concentraci_n}  r-vertical-field" data-fieldname="concentración" data-signal-error-for="concentraci_n{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="concentraci_n" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_concentraci_n}">
+		
+		{BEGIN concentraci_n_label}{$label stock_farmacia_medicamentos concentraci_n }{END concentraci_n_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$concentraci_n_value}	</div>
+
+		
+</div>
+
+
+{END concentraci_n_fieldblock}
+											
+{BEGIN id_producto_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_producto}  r-vertical-field" data-fieldname="id_producto" data-signal-error-for="id_producto{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="id_producto" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_producto}">
+		
+		{BEGIN id_producto_label}{$label stock_farmacia_medicamentos id_producto }{END id_producto_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_producto_value}	</div>
+
+		
+</div>
+
+
+{END id_producto_fieldblock}
+											
+{BEGIN fecha_fabricaci_n_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_fabricaci_n}  r-vertical-field" data-fieldname="fecha_fabricación" data-signal-error-for="fecha_fabricaci_n{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="fecha_fabricaci_n" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_fecha_fabricaci_n}">
+		
+		{BEGIN fecha_fabricaci_n_label}{$label stock_farmacia_medicamentos fecha_fabricaci_n }{END fecha_fabricaci_n_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$fecha_fabricaci_n_value}	</div>
+
+		
+</div>
+
+
+{END fecha_fabricaci_n_fieldblock}
+											
+{BEGIN fecha_caducidad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_caducidad}  r-vertical-field" data-fieldname="fecha_caducidad" data-signal-error-for="fecha_caducidad{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="fecha_caducidad" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_fecha_caducidad}">
+		
+		{BEGIN fecha_caducidad_label}{$label stock_farmacia_medicamentos fecha_caducidad }{END fecha_caducidad_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$fecha_caducidad_value}	</div>
+
+		
+</div>
+
+
+{END fecha_caducidad_fieldblock}
+											
+{BEGIN cantidad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cantidad}  r-vertical-field" data-fieldname="cantidad" data-signal-error-for="cantidad{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="cantidad" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_cantidad}">
+		
+		{BEGIN cantidad_label}{$label stock_farmacia_medicamentos cantidad }{END cantidad_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$cantidad_value}	</div>
+
+		
+</div>
+
+
+{END cantidad_fieldblock}
+											
+{BEGIN precio_unitario_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_precio_unitario}  r-vertical-field" data-fieldname="precio_unitario" data-signal-error-for="precio_unitario{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="precio_unitario" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_precio_unitario}">
+		
+		{BEGIN precio_unitario_label}{$label stock_farmacia_medicamentos precio_unitario }{END precio_unitario_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$precio_unitario_value}	</div>
+
+		
+</div>
+
+
+{END precio_unitario_fieldblock}
+											
+{BEGIN precio_total_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_precio_total}  r-vertical-field" data-fieldname="precio_total" data-signal-error-for="precio_total{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="precio_total" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_precio_total}">
+		
+		{BEGIN precio_total_label}{$label stock_farmacia_medicamentos precio_total }{END precio_total_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$precio_total_value}	</div>
+
+		
+</div>
+
+
+{END precio_total_fieldblock}
+											
+{BEGIN donaci_n_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_donaci_n}  r-vertical-field" data-fieldname="donación" data-signal-error-for="donaci_n{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="donaci_n" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_donaci_n}">
+		
+		{BEGIN donaci_n_label}{$label stock_farmacia_medicamentos donaci_n }{END donaci_n_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$donaci_n_value}	</div>
+
+		
+</div>
+
+
+{END donaci_n_fieldblock}
+											
+{BEGIN reingreso_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_reingreso}  r-vertical-field" data-fieldname="reingreso" data-signal-error-for="reingreso{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="reingreso" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_reingreso}">
+		
+		{BEGIN reingreso_label}{$label stock_farmacia_medicamentos reingreso }{END reingreso_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$reingreso_value}	</div>
+
+		
+</div>
+
+
+{END reingreso_fieldblock}
+											
+{BEGIN zona_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_zona}  r-vertical-field" data-fieldname="zona" data-signal-error-for="zona{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="zona" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_zona}">
+		
+		{BEGIN zona_label}{$label stock_farmacia_medicamentos zona }{END zona_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$zona_value}	</div>
+
+		
+</div>
+
+
+{END zona_fieldblock}
+											
+{BEGIN percha_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_percha}  r-vertical-field" data-fieldname="percha" data-signal-error-for="percha{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="percha" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_percha}">
+		
+		{BEGIN percha_label}{$label stock_farmacia_medicamentos percha }{END percha_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$percha_value}	</div>
+
+		
+</div>
+
+
+{END percha_fieldblock}
+											
+{BEGIN altura_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_altura}  r-vertical-field" data-fieldname="altura" data-signal-error-for="altura{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="altura" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_altura}">
+		
+		{BEGIN altura_label}{$label stock_farmacia_medicamentos altura }{END altura_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$altura_value}	</div>
+
+		
+</div>
+
+
+{END altura_fieldblock}
+											
+{BEGIN secci_n_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secci_n}  r-vertical-field" data-fieldname="sección" data-signal-error-for="secci_n{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="secci_n" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_secci_n}">
+		
+		{BEGIN secci_n_label}{$label stock_farmacia_medicamentos secci_n }{END secci_n_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$secci_n_value}	</div>
+
+		
+</div>
+
+
+{END secci_n_fieldblock}
+											
+{BEGIN entregado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_entregado}  r-vertical-field" data-fieldname="entregado" data-signal-error-for="entregado{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="entregado" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_entregado}">
+		
+		{BEGIN entregado_label}{$label stock_farmacia_medicamentos entregado }{END entregado_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$entregado_value}	</div>
+
+		
+</div>
+
+
+{END entregado_fieldblock}
+											
+{BEGIN no_entregado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_no_entregado}  r-vertical-field" data-fieldname="no_entregado" data-signal-error-for="no_entregado{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="no_entregado" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_no_entregado}">
+		
+		{BEGIN no_entregado_label}{$label stock_farmacia_medicamentos no_entregado }{END no_entregado_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$no_entregado_value}	</div>
+
+		
+</div>
+
+
+{END no_entregado_fieldblock}
+											
+{BEGIN id_farmaceuta_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_farmaceuta}  r-vertical-field" data-fieldname="id_farmaceuta" data-signal-error-for="id_farmaceuta{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="id_farmaceuta" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_farmaceuta}">
+		
+		{BEGIN id_farmaceuta_label}{$label stock_farmacia_medicamentos id_farmaceuta }{END id_farmaceuta_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_farmaceuta_value}	</div>
+
+		
+</div>
+
+
+{END id_farmaceuta_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Cerrar ventana			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="stock_farmacia_medicamentos_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Editar		
+		</a>
+	</li>
+{END edit_page_button}
+								<li data-itemtype="view_pdf" data-itemid="view_pdf" {$item_view_pdf} data-pageid="{$pageid}" data-small >
+				<a class="pdflink" data-pdfpage="view" 
+data-scope="0" 
+data-split="0" 
+data-records="10" 
+data-orientation="portrait" 
+data-scale="100" 
+data-filename="Stock Farmacia Medicamentos.pdf" 
+data-pagetype="view" 
+{$pdflink_attrs}  title="" >
+				
+		Vista PDF		
+		</a>
+	</li>
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
