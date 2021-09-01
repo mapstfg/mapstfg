@@ -1,0 +1,666 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel stock_farmacia_equipos search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_stock_farmacia_equipo_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_stock_farmacia_equipo}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id_stock_farmacia_equipo" 
+	
+	data-signal-error-for="id_stock_farmacia_equipo{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="id_stock_farmacia_equipo" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_stock_farmacia_equipo}">
+		{$label stock_farmacia_equipos id_stock_farmacia_equipo }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_stock_farmacia_equipo}
+	</div>
+	<div class="r-search-field">
+		{$id_stock_farmacia_equipo_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_stock_farmacia_equipo_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_stock_farmacia_equipo_fieldblock}
+											
+{BEGIN id_aeq_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_aeq}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id_aeq" 
+	
+	data-signal-error-for="id_aeq{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="id_aeq" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_aeq}">
+		{$label stock_farmacia_equipos id_aeq }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_aeq}
+	</div>
+	<div class="r-search-field">
+		{$id_aeq_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_aeq_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_aeq_fieldblock}
+											
+{BEGIN id_producto_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_producto}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id_producto" 
+	
+	data-signal-error-for="id_producto{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="id_producto" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_producto}">
+		{$label stock_farmacia_equipos id_producto }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_producto}
+	</div>
+	<div class="r-search-field">
+		{$id_producto_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_producto_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_producto_fieldblock}
+											
+{BEGIN descripci_n_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_descripci_n}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="descripción" 
+	
+	data-signal-error-for="descripci_n{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="descripci_n" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_descripci_n}">
+		{$label stock_farmacia_equipos descripci_n }	</label>
+	<div class="r-search-option">
+		{$searchtype_descripci_n}
+	</div>
+	<div class="r-search-field">
+		{$descripci_n_editcontrol}	</div>
+	<div class="r-search-field">
+		{$descripci_n_editcontrol1}
+	</div>
+	
+</div>
+
+{END descripci_n_fieldblock}
+											
+{BEGIN tama_o_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tama_o}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="tamaño" 
+	
+	data-signal-error-for="tama_o{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="tama_o" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_tama_o}">
+		{$label stock_farmacia_equipos tama_o }	</label>
+	<div class="r-search-option">
+		{$searchtype_tama_o}
+	</div>
+	<div class="r-search-field">
+		{$tama_o_editcontrol}	</div>
+	<div class="r-search-field">
+		{$tama_o_editcontrol1}
+	</div>
+	
+</div>
+
+{END tama_o_fieldblock}
+											
+{BEGIN calibre_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_calibre}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="calibre" 
+	
+	data-signal-error-for="calibre{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="calibre" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_calibre}">
+		{$label stock_farmacia_equipos calibre }	</label>
+	<div class="r-search-option">
+		{$searchtype_calibre}
+	</div>
+	<div class="r-search-field">
+		{$calibre_editcontrol}	</div>
+	<div class="r-search-field">
+		{$calibre_editcontrol1}
+	</div>
+	
+</div>
+
+{END calibre_fieldblock}
+											
+{BEGIN volumen_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_volumen}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="volumen" 
+	
+	data-signal-error-for="volumen{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="volumen" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_volumen}">
+		{$label stock_farmacia_equipos volumen }	</label>
+	<div class="r-search-option">
+		{$searchtype_volumen}
+	</div>
+	<div class="r-search-field">
+		{$volumen_editcontrol}	</div>
+	<div class="r-search-field">
+		{$volumen_editcontrol1}
+	</div>
+	
+</div>
+
+{END volumen_fieldblock}
+											
+{BEGIN fecha_fabricaci_n_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_fabricaci_n}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="fecha_fabricación" 
+	
+	data-signal-error-for="fecha_fabricaci_n{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="fecha_fabricaci_n" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_fecha_fabricaci_n}">
+		{$label stock_farmacia_equipos fecha_fabricaci_n }	</label>
+	<div class="r-search-option">
+		{$searchtype_fecha_fabricaci_n}
+	</div>
+	<div class="r-search-field">
+		{$fecha_fabricaci_n_editcontrol}	</div>
+	<div class="r-search-field">
+		{$fecha_fabricaci_n_editcontrol1}
+	</div>
+	
+</div>
+
+{END fecha_fabricaci_n_fieldblock}
+											
+{BEGIN fecha_caducidad_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_caducidad}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="fecha_caducidad" 
+	
+	data-signal-error-for="fecha_caducidad{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="fecha_caducidad" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_fecha_caducidad}">
+		{$label stock_farmacia_equipos fecha_caducidad }	</label>
+	<div class="r-search-option">
+		{$searchtype_fecha_caducidad}
+	</div>
+	<div class="r-search-field">
+		{$fecha_caducidad_editcontrol}	</div>
+	<div class="r-search-field">
+		{$fecha_caducidad_editcontrol1}
+	</div>
+	
+</div>
+
+{END fecha_caducidad_fieldblock}
+											
+{BEGIN cantidad_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cantidad}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="cantidad" 
+	
+	data-signal-error-for="cantidad{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="cantidad" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cantidad}">
+		{$label stock_farmacia_equipos cantidad }	</label>
+	<div class="r-search-option">
+		{$searchtype_cantidad}
+	</div>
+	<div class="r-search-field">
+		{$cantidad_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cantidad_editcontrol1}
+	</div>
+	
+</div>
+
+{END cantidad_fieldblock}
+											
+{BEGIN precio_unitario_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_precio_unitario}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="precio_unitario" 
+	
+	data-signal-error-for="precio_unitario{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="precio_unitario" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_precio_unitario}">
+		{$label stock_farmacia_equipos precio_unitario }	</label>
+	<div class="r-search-option">
+		{$searchtype_precio_unitario}
+	</div>
+	<div class="r-search-field">
+		{$precio_unitario_editcontrol}	</div>
+	<div class="r-search-field">
+		{$precio_unitario_editcontrol1}
+	</div>
+	
+</div>
+
+{END precio_unitario_fieldblock}
+											
+{BEGIN precio_total_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_precio_total}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="precio_total" 
+	
+	data-signal-error-for="precio_total{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="precio_total" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_precio_total}">
+		{$label stock_farmacia_equipos precio_total }	</label>
+	<div class="r-search-option">
+		{$searchtype_precio_total}
+	</div>
+	<div class="r-search-field">
+		{$precio_total_editcontrol}	</div>
+	<div class="r-search-field">
+		{$precio_total_editcontrol1}
+	</div>
+	
+</div>
+
+{END precio_total_fieldblock}
+											
+{BEGIN donaci_n_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_donaci_n}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="donación" 
+	
+	data-signal-error-for="donaci_n{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="donaci_n" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_donaci_n}">
+		{$label stock_farmacia_equipos donaci_n }	</label>
+	<div class="r-search-option">
+		{$searchtype_donaci_n}
+	</div>
+	<div class="r-search-field">
+		{$donaci_n_editcontrol}	</div>
+	<div class="r-search-field">
+		{$donaci_n_editcontrol1}
+	</div>
+	
+</div>
+
+{END donaci_n_fieldblock}
+											
+{BEGIN reingreso_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_reingreso}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="reingreso" 
+	
+	data-signal-error-for="reingreso{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="reingreso" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_reingreso}">
+		{$label stock_farmacia_equipos reingreso }	</label>
+	<div class="r-search-option">
+		{$searchtype_reingreso}
+	</div>
+	<div class="r-search-field">
+		{$reingreso_editcontrol}	</div>
+	<div class="r-search-field">
+		{$reingreso_editcontrol1}
+	</div>
+	
+</div>
+
+{END reingreso_fieldblock}
+											
+{BEGIN zona_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_zona}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="zona" 
+	
+	data-signal-error-for="zona{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="zona" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_zona}">
+		{$label stock_farmacia_equipos zona }	</label>
+	<div class="r-search-option">
+		{$searchtype_zona}
+	</div>
+	<div class="r-search-field">
+		{$zona_editcontrol}	</div>
+	<div class="r-search-field">
+		{$zona_editcontrol1}
+	</div>
+	
+</div>
+
+{END zona_fieldblock}
+											
+{BEGIN percha_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_percha}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="percha" 
+	
+	data-signal-error-for="percha{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="percha" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_percha}">
+		{$label stock_farmacia_equipos percha }	</label>
+	<div class="r-search-option">
+		{$searchtype_percha}
+	</div>
+	<div class="r-search-field">
+		{$percha_editcontrol}	</div>
+	<div class="r-search-field">
+		{$percha_editcontrol1}
+	</div>
+	
+</div>
+
+{END percha_fieldblock}
+											
+{BEGIN altura_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_altura}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="altura" 
+	
+	data-signal-error-for="altura{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="altura" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_altura}">
+		{$label stock_farmacia_equipos altura }	</label>
+	<div class="r-search-option">
+		{$searchtype_altura}
+	</div>
+	<div class="r-search-field">
+		{$altura_editcontrol}	</div>
+	<div class="r-search-field">
+		{$altura_editcontrol1}
+	</div>
+	
+</div>
+
+{END altura_fieldblock}
+											
+{BEGIN secci_n_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secci_n}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="sección" 
+	
+	data-signal-error-for="secci_n{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="secci_n" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_secci_n}">
+		{$label stock_farmacia_equipos secci_n }	</label>
+	<div class="r-search-option">
+		{$searchtype_secci_n}
+	</div>
+	<div class="r-search-field">
+		{$secci_n_editcontrol}	</div>
+	<div class="r-search-field">
+		{$secci_n_editcontrol1}
+	</div>
+	
+</div>
+
+{END secci_n_fieldblock}
+											
+{BEGIN entregado_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_entregado}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="entregado" 
+	
+	data-signal-error-for="entregado{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field18" {$item_integrated_search_field18} data-pageid="{$pageid}" data-field="entregado" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_entregado}">
+		{$label stock_farmacia_equipos entregado }	</label>
+	<div class="r-search-option">
+		{$searchtype_entregado}
+	</div>
+	<div class="r-search-field">
+		{$entregado_editcontrol}	</div>
+	<div class="r-search-field">
+		{$entregado_editcontrol1}
+	</div>
+	
+</div>
+
+{END entregado_fieldblock}
+											
+{BEGIN no_entregado_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_no_entregado}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="no_entregado" 
+	
+	data-signal-error-for="no_entregado{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field19" {$item_integrated_search_field19} data-pageid="{$pageid}" data-field="no_entregado" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_no_entregado}">
+		{$label stock_farmacia_equipos no_entregado }	</label>
+	<div class="r-search-option">
+		{$searchtype_no_entregado}
+	</div>
+	<div class="r-search-field">
+		{$no_entregado_editcontrol}	</div>
+	<div class="r-search-field">
+		{$no_entregado_editcontrol1}
+	</div>
+	
+</div>
+
+{END no_entregado_fieldblock}
+											
+{BEGIN id_farmaceuta_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_farmaceuta}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id_farmaceuta" 
+	
+	data-signal-error-for="id_farmaceuta{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field20" {$item_integrated_search_field20} data-pageid="{$pageid}" data-field="id_farmaceuta" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_farmaceuta}">
+		{$label stock_farmacia_equipos id_farmaceuta }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_farmaceuta}
+	</div>
+	<div class="r-search-field">
+		{$id_farmaceuta_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_farmaceuta_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_farmaceuta_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
