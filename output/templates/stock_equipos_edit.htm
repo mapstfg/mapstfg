@@ -1,0 +1,647 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel stock_equipos edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Ver</button>
+{END view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_fpp_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_fpp}  r-vertical-field" 
+	data-fieldname="id_fpp" 
+	data-signal-error-for="id_fpp{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="id_fpp" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_id_fpp}">
+		{BEGIN id_fpp_label}{$label stock_equipos id_fpp }{END id_fpp_label}
+	</label>
+	<div class="r-edit-field">
+		{$id_fpp_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="id_fpp">
+		<div class="text-muted" >
+		{$tooltip stock_equipos id_fpp }		</div>
+	</div>
+</div>
+
+
+{END id_fpp_fieldblock}
+											
+{BEGIN id_producto_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_producto}  r-vertical-field" 
+	data-fieldname="id_producto" 
+	data-signal-error-for="id_producto{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="id_producto" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_id_producto}">
+		{BEGIN id_producto_label}{$label stock_equipos id_producto }{END id_producto_label}
+	</label>
+	<div class="r-edit-field">
+		{$id_producto_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="id_producto">
+		<div class="text-muted" >
+		{$tooltip stock_equipos id_producto }		</div>
+	</div>
+</div>
+
+
+{END id_producto_fieldblock}
+											
+{BEGIN descripci_n_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_descripci_n}  r-vertical-field" 
+	data-fieldname="descripción" 
+	data-signal-error-for="descripci_n{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="descripci_n" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_descripci_n}">
+		{BEGIN descripci_n_label}{$label stock_equipos descripci_n }{END descripci_n_label}
+	</label>
+	<div class="r-edit-field">
+		{$descripci_n_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="descripci_n">
+		<div class="text-muted" >
+		{$tooltip stock_equipos descripci_n }		</div>
+	</div>
+</div>
+
+
+{END descripci_n_fieldblock}
+											
+{BEGIN tama_o_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tama_o}  r-vertical-field" 
+	data-fieldname="tamaño" 
+	data-signal-error-for="tama_o{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="tama_o" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_tama_o}">
+		{BEGIN tama_o_label}{$label stock_equipos tama_o }{END tama_o_label}
+	</label>
+	<div class="r-edit-field">
+		{$tama_o_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tama_o">
+		<div class="text-muted" >
+		{$tooltip stock_equipos tama_o }		</div>
+	</div>
+</div>
+
+
+{END tama_o_fieldblock}
+											
+{BEGIN calibre_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_calibre}  r-vertical-field" 
+	data-fieldname="calibre" 
+	data-signal-error-for="calibre{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="calibre" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_calibre}">
+		{BEGIN calibre_label}{$label stock_equipos calibre }{END calibre_label}
+	</label>
+	<div class="r-edit-field">
+		{$calibre_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="calibre">
+		<div class="text-muted" >
+		{$tooltip stock_equipos calibre }		</div>
+	</div>
+</div>
+
+
+{END calibre_fieldblock}
+											
+{BEGIN volumen_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_volumen}  r-vertical-field" 
+	data-fieldname="volumen" 
+	data-signal-error-for="volumen{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="volumen" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_volumen}">
+		{BEGIN volumen_label}{$label stock_equipos volumen }{END volumen_label}
+	</label>
+	<div class="r-edit-field">
+		{$volumen_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="volumen">
+		<div class="text-muted" >
+		{$tooltip stock_equipos volumen }		</div>
+	</div>
+</div>
+
+
+{END volumen_fieldblock}
+											
+{BEGIN fecha_fabricaci_n_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_fabricaci_n}  r-vertical-field" 
+	data-fieldname="fecha_fabricación" 
+	data-signal-error-for="fecha_fabricaci_n{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="fecha_fabricaci_n" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_fecha_fabricaci_n}">
+		{BEGIN fecha_fabricaci_n_label}{$label stock_equipos fecha_fabricaci_n }{END fecha_fabricaci_n_label}
+	</label>
+	<div class="r-edit-field">
+		{$fecha_fabricaci_n_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="fecha_fabricaci_n">
+		<div class="text-muted" >
+		{$tooltip stock_equipos fecha_fabricaci_n }		</div>
+	</div>
+</div>
+
+
+{END fecha_fabricaci_n_fieldblock}
+											
+{BEGIN fecha_caducidad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_caducidad}  r-vertical-field" 
+	data-fieldname="fecha_caducidad" 
+	data-signal-error-for="fecha_caducidad{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="fecha_caducidad" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_fecha_caducidad}">
+		{BEGIN fecha_caducidad_label}{$label stock_equipos fecha_caducidad }{END fecha_caducidad_label}
+	</label>
+	<div class="r-edit-field">
+		{$fecha_caducidad_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="fecha_caducidad">
+		<div class="text-muted" >
+		{$tooltip stock_equipos fecha_caducidad }		</div>
+	</div>
+</div>
+
+
+{END fecha_caducidad_fieldblock}
+											
+{BEGIN cantidad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cantidad}  r-vertical-field" 
+	data-fieldname="cantidad" 
+	data-signal-error-for="cantidad{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="cantidad" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cantidad}">
+		{BEGIN cantidad_label}{$label stock_equipos cantidad }{END cantidad_label}
+	</label>
+	<div class="r-edit-field">
+		{$cantidad_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cantidad">
+		<div class="text-muted" >
+		{$tooltip stock_equipos cantidad }		</div>
+	</div>
+</div>
+
+
+{END cantidad_fieldblock}
+											
+{BEGIN precio_unitario_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_precio_unitario}  r-vertical-field" 
+	data-fieldname="precio_unitario" 
+	data-signal-error-for="precio_unitario{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="precio_unitario" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_precio_unitario}">
+		{BEGIN precio_unitario_label}{$label stock_equipos precio_unitario }{END precio_unitario_label}
+	</label>
+	<div class="r-edit-field">
+		{$precio_unitario_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="precio_unitario">
+		<div class="text-muted" >
+		{$tooltip stock_equipos precio_unitario }		</div>
+	</div>
+</div>
+
+
+{END precio_unitario_fieldblock}
+											
+{BEGIN precio_total_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_precio_total}  r-vertical-field" 
+	data-fieldname="precio_total" 
+	data-signal-error-for="precio_total{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="precio_total" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_precio_total}">
+		{BEGIN precio_total_label}{$label stock_equipos precio_total }{END precio_total_label}
+	</label>
+	<div class="r-edit-field">
+		{$precio_total_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="precio_total">
+		<div class="text-muted" >
+		{$tooltip stock_equipos precio_total }		</div>
+	</div>
+</div>
+
+
+{END precio_total_fieldblock}
+											
+{BEGIN donaci_n_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_donaci_n}  r-vertical-field" 
+	data-fieldname="donación" 
+	data-signal-error-for="donaci_n{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="donaci_n" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_donaci_n}">
+		{BEGIN donaci_n_label}{$label stock_equipos donaci_n }{END donaci_n_label}
+	</label>
+	<div class="r-edit-field">
+		{$donaci_n_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="donaci_n">
+		<div class="text-muted" >
+		{$tooltip stock_equipos donaci_n }		</div>
+	</div>
+</div>
+
+
+{END donaci_n_fieldblock}
+											
+{BEGIN reingreso_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_reingreso}  r-vertical-field" 
+	data-fieldname="reingreso" 
+	data-signal-error-for="reingreso{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="reingreso" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_reingreso}">
+		{BEGIN reingreso_label}{$label stock_equipos reingreso }{END reingreso_label}
+	</label>
+	<div class="r-edit-field">
+		{$reingreso_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="reingreso">
+		<div class="text-muted" >
+		{$tooltip stock_equipos reingreso }		</div>
+	</div>
+</div>
+
+
+{END reingreso_fieldblock}
+											
+{BEGIN zona_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_zona}  r-vertical-field" 
+	data-fieldname="zona" 
+	data-signal-error-for="zona{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="zona" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_zona}">
+		{BEGIN zona_label}{$label stock_equipos zona }{END zona_label}
+	</label>
+	<div class="r-edit-field">
+		{$zona_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="zona">
+		<div class="text-muted" >
+		{$tooltip stock_equipos zona }		</div>
+	</div>
+</div>
+
+
+{END zona_fieldblock}
+											
+{BEGIN percha_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_percha}  r-vertical-field" 
+	data-fieldname="percha" 
+	data-signal-error-for="percha{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="percha" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_percha}">
+		{BEGIN percha_label}{$label stock_equipos percha }{END percha_label}
+	</label>
+	<div class="r-edit-field">
+		{$percha_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="percha">
+		<div class="text-muted" >
+		{$tooltip stock_equipos percha }		</div>
+	</div>
+</div>
+
+
+{END percha_fieldblock}
+											
+{BEGIN altura_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_altura}  r-vertical-field" 
+	data-fieldname="altura" 
+	data-signal-error-for="altura{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="altura" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_altura}">
+		{BEGIN altura_label}{$label stock_equipos altura }{END altura_label}
+	</label>
+	<div class="r-edit-field">
+		{$altura_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="altura">
+		<div class="text-muted" >
+		{$tooltip stock_equipos altura }		</div>
+	</div>
+</div>
+
+
+{END altura_fieldblock}
+											
+{BEGIN secci_n_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secci_n}  r-vertical-field" 
+	data-fieldname="sección" 
+	data-signal-error-for="secci_n{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="secci_n" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_secci_n}">
+		{BEGIN secci_n_label}{$label stock_equipos secci_n }{END secci_n_label}
+	</label>
+	<div class="r-edit-field">
+		{$secci_n_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secci_n">
+		<div class="text-muted" >
+		{$tooltip stock_equipos secci_n }		</div>
+	</div>
+</div>
+
+
+{END secci_n_fieldblock}
+											
+{BEGIN entregado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_entregado}  r-vertical-field" 
+	data-fieldname="entregado" 
+	data-signal-error-for="entregado{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="entregado" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_entregado}">
+		{BEGIN entregado_label}{$label stock_equipos entregado }{END entregado_label}
+	</label>
+	<div class="r-edit-field">
+		{$entregado_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="entregado">
+		<div class="text-muted" >
+		{$tooltip stock_equipos entregado }		</div>
+	</div>
+</div>
+
+
+{END entregado_fieldblock}
+											
+{BEGIN no_entregado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_no_entregado}  r-vertical-field" 
+	data-fieldname="no_entregado" 
+	data-signal-error-for="no_entregado{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="no_entregado" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_no_entregado}">
+		{BEGIN no_entregado_label}{$label stock_equipos no_entregado }{END no_entregado_label}
+	</label>
+	<div class="r-edit-field">
+		{$no_entregado_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="no_entregado">
+		<div class="text-muted" >
+		{$tooltip stock_equipos no_entregado }		</div>
+	</div>
+</div>
+
+
+{END no_entregado_fieldblock}
+											
+{BEGIN id_almacenista_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_almacenista}  r-vertical-field" 
+	data-fieldname="id_almacenista" 
+	data-signal-error-for="id_almacenista{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="id_almacenista" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_id_almacenista}">
+		{BEGIN id_almacenista_label}{$label stock_equipos id_almacenista }{END id_almacenista_label}
+	</label>
+	<div class="r-edit-field">
+		{$id_almacenista_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="id_almacenista">
+		<div class="text-muted" >
+		{$tooltip stock_equipos id_almacenista }		</div>
+	</div>
+</div>
+
+
+{END id_almacenista_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Cancelar			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Reiniciar		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  href="stock_equipos_view.php?{$editlink}" {$view_page_button_attrs}  title="" >
+				
+		Ver		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
