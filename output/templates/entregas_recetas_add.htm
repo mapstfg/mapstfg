@@ -1,0 +1,666 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel entregas_recetas add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Ver</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Editar</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_receta_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_receta}  r-vertical-field" 
+	data-fieldname="id_receta" 
+	data-signal-error-for="id_receta{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="id_receta" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_id_receta}">
+		{BEGIN id_receta_label}{$label entregas_recetas id_receta }{END id_receta_label}
+	</label>
+	<div class="r-edit-field">
+		{$id_receta_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="id_receta">
+		<div class="text-muted" >
+		{$tooltip entregas_recetas id_receta }		</div>
+	</div>
+</div>
+
+
+{END id_receta_fieldblock}
+											
+{BEGIN id_paciente_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_paciente}  r-vertical-field" 
+	data-fieldname="id_paciente" 
+	data-signal-error-for="id_paciente{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="id_paciente" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_id_paciente}">
+		{BEGIN id_paciente_label}{$label entregas_recetas id_paciente }{END id_paciente_label}
+	</label>
+	<div class="r-edit-field">
+		{$id_paciente_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="id_paciente">
+		<div class="text-muted" >
+		{$tooltip entregas_recetas id_paciente }		</div>
+	</div>
+</div>
+
+
+{END id_paciente_fieldblock}
+											
+{BEGIN fecha_emision_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_emision}  r-vertical-field" 
+	data-fieldname="fecha_emision" 
+	data-signal-error-for="fecha_emision{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="fecha_emision" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_fecha_emision}">
+		{BEGIN fecha_emision_label}{$label entregas_recetas fecha_emision }{END fecha_emision_label}
+	</label>
+	<div class="r-edit-field">
+		{$fecha_emision_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="fecha_emision">
+		<div class="text-muted" >
+		{$tooltip entregas_recetas fecha_emision }		</div>
+	</div>
+</div>
+
+
+{END fecha_emision_fieldblock}
+											
+{BEGIN fecha_recepcion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_recepcion}  r-vertical-field" 
+	data-fieldname="fecha_recepcion" 
+	data-signal-error-for="fecha_recepcion{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="fecha_recepcion" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_fecha_recepcion}">
+		{BEGIN fecha_recepcion_label}{$label entregas_recetas fecha_recepcion }{END fecha_recepcion_label}
+	</label>
+	<div class="r-edit-field">
+		{$fecha_recepcion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="fecha_recepcion">
+		<div class="text-muted" >
+		{$tooltip entregas_recetas fecha_recepcion }		</div>
+	</div>
+</div>
+
+
+{END fecha_recepcion_fieldblock}
+											
+{BEGIN subtotal_grava_iva_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_subtotal_grava_iva}  r-vertical-field" 
+	data-fieldname="subtotal_grava_iva" 
+	data-signal-error-for="subtotal_grava_iva{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="subtotal_grava_iva" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_subtotal_grava_iva}">
+		{BEGIN subtotal_grava_iva_label}{$label entregas_recetas subtotal_grava_iva }{END subtotal_grava_iva_label}
+	</label>
+	<div class="r-edit-field">
+		{$subtotal_grava_iva_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="subtotal_grava_iva">
+		<div class="text-muted" >
+		{$tooltip entregas_recetas subtotal_grava_iva }		</div>
+	</div>
+</div>
+
+
+{END subtotal_grava_iva_fieldblock}
+											
+{BEGIN subtotal_iva_0_medicinas_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_subtotal_iva_0_medicinas}  r-vertical-field" 
+	data-fieldname="subtotal_iva_0_medicinas" 
+	data-signal-error-for="subtotal_iva_0_medicinas{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="subtotal_iva_0_medicinas" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_subtotal_iva_0_medicinas}">
+		{BEGIN subtotal_iva_0_medicinas_label}{$label entregas_recetas subtotal_iva_0_medicinas }{END subtotal_iva_0_medicinas_label}
+	</label>
+	<div class="r-edit-field">
+		{$subtotal_iva_0_medicinas_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="subtotal_iva_0_medicinas">
+		<div class="text-muted" >
+		{$tooltip entregas_recetas subtotal_iva_0_medicinas }		</div>
+	</div>
+</div>
+
+
+{END subtotal_iva_0_medicinas_fieldblock}
+											
+{BEGIN subtotal_iva_0_equipos_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_subtotal_iva_0_equipos}  r-vertical-field" 
+	data-fieldname="subtotal_iva_0_equipos" 
+	data-signal-error-for="subtotal_iva_0_equipos{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="subtotal_iva_0_equipos" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_subtotal_iva_0_equipos}">
+		{BEGIN subtotal_iva_0_equipos_label}{$label entregas_recetas subtotal_iva_0_equipos }{END subtotal_iva_0_equipos_label}
+	</label>
+	<div class="r-edit-field">
+		{$subtotal_iva_0_equipos_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="subtotal_iva_0_equipos">
+		<div class="text-muted" >
+		{$tooltip entregas_recetas subtotal_iva_0_equipos }		</div>
+	</div>
+</div>
+
+
+{END subtotal_iva_0_equipos_fieldblock}
+											
+{BEGIN subtotal_no_objeto_iva_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_subtotal_no_objeto_iva}  r-vertical-field" 
+	data-fieldname="subtotal_no_objeto_iva" 
+	data-signal-error-for="subtotal_no_objeto_iva{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="subtotal_no_objeto_iva" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_subtotal_no_objeto_iva}">
+		{BEGIN subtotal_no_objeto_iva_label}{$label entregas_recetas subtotal_no_objeto_iva }{END subtotal_no_objeto_iva_label}
+	</label>
+	<div class="r-edit-field">
+		{$subtotal_no_objeto_iva_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="subtotal_no_objeto_iva">
+		<div class="text-muted" >
+		{$tooltip entregas_recetas subtotal_no_objeto_iva }		</div>
+	</div>
+</div>
+
+
+{END subtotal_no_objeto_iva_fieldblock}
+											
+{BEGIN subtotal_excento_iva_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_subtotal_excento_iva}  r-vertical-field" 
+	data-fieldname="subtotal_excento_iva" 
+	data-signal-error-for="subtotal_excento_iva{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="subtotal_excento_iva" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_subtotal_excento_iva}">
+		{BEGIN subtotal_excento_iva_label}{$label entregas_recetas subtotal_excento_iva }{END subtotal_excento_iva_label}
+	</label>
+	<div class="r-edit-field">
+		{$subtotal_excento_iva_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="subtotal_excento_iva">
+		<div class="text-muted" >
+		{$tooltip entregas_recetas subtotal_excento_iva }		</div>
+	</div>
+</div>
+
+
+{END subtotal_excento_iva_fieldblock}
+											
+{BEGIN subtotal_sin_impuestos_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_subtotal_sin_impuestos}  r-vertical-field" 
+	data-fieldname="subtotal_sin_impuestos" 
+	data-signal-error-for="subtotal_sin_impuestos{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="subtotal_sin_impuestos" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_subtotal_sin_impuestos}">
+		{BEGIN subtotal_sin_impuestos_label}{$label entregas_recetas subtotal_sin_impuestos }{END subtotal_sin_impuestos_label}
+	</label>
+	<div class="r-edit-field">
+		{$subtotal_sin_impuestos_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="subtotal_sin_impuestos">
+		<div class="text-muted" >
+		{$tooltip entregas_recetas subtotal_sin_impuestos }		</div>
+	</div>
+</div>
+
+
+{END subtotal_sin_impuestos_fieldblock}
+											
+{BEGIN total_descuento_grava_iva_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_total_descuento_grava_iva}  r-vertical-field" 
+	data-fieldname="total_descuento_grava_iva" 
+	data-signal-error-for="total_descuento_grava_iva{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="total_descuento_grava_iva" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_total_descuento_grava_iva}">
+		{BEGIN total_descuento_grava_iva_label}{$label entregas_recetas total_descuento_grava_iva }{END total_descuento_grava_iva_label}
+	</label>
+	<div class="r-edit-field">
+		{$total_descuento_grava_iva_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="total_descuento_grava_iva">
+		<div class="text-muted" >
+		{$tooltip entregas_recetas total_descuento_grava_iva }		</div>
+	</div>
+</div>
+
+
+{END total_descuento_grava_iva_fieldblock}
+											
+{BEGIN total_descuento_iva_0_medicinas_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_total_descuento_iva_0_medicinas}  r-vertical-field" 
+	data-fieldname="total_descuento_iva_0_medicinas" 
+	data-signal-error-for="total_descuento_iva_0_medicinas{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="total_descuento_iva_0_medicinas" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_total_descuento_iva_0_medicinas}">
+		{BEGIN total_descuento_iva_0_medicinas_label}{$label entregas_recetas total_descuento_iva_0_medicinas }{END total_descuento_iva_0_medicinas_label}
+	</label>
+	<div class="r-edit-field">
+		{$total_descuento_iva_0_medicinas_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="total_descuento_iva_0_medicinas">
+		<div class="text-muted" >
+		{$tooltip entregas_recetas total_descuento_iva_0_medicinas }		</div>
+	</div>
+</div>
+
+
+{END total_descuento_iva_0_medicinas_fieldblock}
+											
+{BEGIN total_descuento_iva_0_equipos_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_total_descuento_iva_0_equipos}  r-vertical-field" 
+	data-fieldname="total_descuento_iva_0_equipos" 
+	data-signal-error-for="total_descuento_iva_0_equipos{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="total_descuento_iva_0_equipos" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_total_descuento_iva_0_equipos}">
+		{BEGIN total_descuento_iva_0_equipos_label}{$label entregas_recetas total_descuento_iva_0_equipos }{END total_descuento_iva_0_equipos_label}
+	</label>
+	<div class="r-edit-field">
+		{$total_descuento_iva_0_equipos_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="total_descuento_iva_0_equipos">
+		<div class="text-muted" >
+		{$tooltip entregas_recetas total_descuento_iva_0_equipos }		</div>
+	</div>
+</div>
+
+
+{END total_descuento_iva_0_equipos_fieldblock}
+											
+{BEGIN total_descuento_excento_iva_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_total_descuento_excento_iva}  r-vertical-field" 
+	data-fieldname="total_descuento_excento_iva" 
+	data-signal-error-for="total_descuento_excento_iva{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="total_descuento_excento_iva" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_total_descuento_excento_iva}">
+		{BEGIN total_descuento_excento_iva_label}{$label entregas_recetas total_descuento_excento_iva }{END total_descuento_excento_iva_label}
+	</label>
+	<div class="r-edit-field">
+		{$total_descuento_excento_iva_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="total_descuento_excento_iva">
+		<div class="text-muted" >
+		{$tooltip entregas_recetas total_descuento_excento_iva }		</div>
+	</div>
+</div>
+
+
+{END total_descuento_excento_iva_fieldblock}
+											
+{BEGIN total_descuento_sin_impuestos_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_total_descuento_sin_impuestos}  r-vertical-field" 
+	data-fieldname="total_descuento_sin_impuestos" 
+	data-signal-error-for="total_descuento_sin_impuestos{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="total_descuento_sin_impuestos" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_total_descuento_sin_impuestos}">
+		{BEGIN total_descuento_sin_impuestos_label}{$label entregas_recetas total_descuento_sin_impuestos }{END total_descuento_sin_impuestos_label}
+	</label>
+	<div class="r-edit-field">
+		{$total_descuento_sin_impuestos_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="total_descuento_sin_impuestos">
+		<div class="text-muted" >
+		{$tooltip entregas_recetas total_descuento_sin_impuestos }		</div>
+	</div>
+</div>
+
+
+{END total_descuento_sin_impuestos_fieldblock}
+											
+{BEGIN iva_gravado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_iva_gravado}  r-vertical-field" 
+	data-fieldname="iva_gravado" 
+	data-signal-error-for="iva_gravado{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="iva_gravado" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_iva_gravado}">
+		{BEGIN iva_gravado_label}{$label entregas_recetas iva_gravado }{END iva_gravado_label}
+	</label>
+	<div class="r-edit-field">
+		{$iva_gravado_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="iva_gravado">
+		<div class="text-muted" >
+		{$tooltip entregas_recetas iva_gravado }		</div>
+	</div>
+</div>
+
+
+{END iva_gravado_fieldblock}
+											
+{BEGIN iva_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_iva}  r-vertical-field" 
+	data-fieldname="iva" 
+	data-signal-error-for="iva{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="iva" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_iva}">
+		{BEGIN iva_label}{$label entregas_recetas iva }{END iva_label}
+	</label>
+	<div class="r-edit-field">
+		{$iva_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="iva">
+		<div class="text-muted" >
+		{$tooltip entregas_recetas iva }		</div>
+	</div>
+</div>
+
+
+{END iva_fieldblock}
+											
+{BEGIN ice_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ice}  r-vertical-field" 
+	data-fieldname="ice" 
+	data-signal-error-for="ice{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="ice" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ice}">
+		{BEGIN ice_label}{$label entregas_recetas ice }{END ice_label}
+	</label>
+	<div class="r-edit-field">
+		{$ice_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ice">
+		<div class="text-muted" >
+		{$tooltip entregas_recetas ice }		</div>
+	</div>
+</div>
+
+
+{END ice_fieldblock}
+											
+{BEGIN irbpnr_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_irbpnr}  r-vertical-field" 
+	data-fieldname="irbpnr" 
+	data-signal-error-for="irbpnr{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="irbpnr" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_irbpnr}">
+		{BEGIN irbpnr_label}{$label entregas_recetas irbpnr }{END irbpnr_label}
+	</label>
+	<div class="r-edit-field">
+		{$irbpnr_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="irbpnr">
+		<div class="text-muted" >
+		{$tooltip entregas_recetas irbpnr }		</div>
+	</div>
+</div>
+
+
+{END irbpnr_fieldblock}
+											
+{BEGIN valor_total_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_valor_total}  r-vertical-field" 
+	data-fieldname="valor_total" 
+	data-signal-error-for="valor_total{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="valor_total" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_valor_total}">
+		{BEGIN valor_total_label}{$label entregas_recetas valor_total }{END valor_total_label}
+	</label>
+	<div class="r-edit-field">
+		{$valor_total_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="valor_total">
+		<div class="text-muted" >
+		{$tooltip entregas_recetas valor_total }		</div>
+	</div>
+</div>
+
+
+{END valor_total_fieldblock}
+											
+{BEGIN donaci_n_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_donaci_n}  r-vertical-field" 
+	data-fieldname="donación" 
+	data-signal-error-for="donaci_n{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="donaci_n" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_donaci_n}">
+		{BEGIN donaci_n_label}{$label entregas_recetas donaci_n }{END donaci_n_label}
+	</label>
+	<div class="r-edit-field">
+		{$donaci_n_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="donaci_n">
+		<div class="text-muted" >
+		{$tooltip entregas_recetas donaci_n }		</div>
+	</div>
+</div>
+
+
+{END donaci_n_fieldblock}
+											
+{BEGIN observaciones_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_observaciones}  r-vertical-field" 
+	data-fieldname="observaciones" 
+	data-signal-error-for="observaciones{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="observaciones" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_observaciones}">
+		{BEGIN observaciones_label}{$label entregas_recetas observaciones }{END observaciones_label}
+	</label>
+	<div class="r-edit-field">
+		{$observaciones_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="observaciones">
+		<div class="text-muted" >
+		{$tooltip entregas_recetas observaciones }		</div>
+	</div>
+</div>
+
+
+{END observaciones_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
